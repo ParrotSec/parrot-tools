@@ -1,0 +1,21 @@
+Package: parrot-meta-all
+Source: parrot-meta
+Version: 0.4
+Architecture: all
+Maintainer: Lorenzo "EclipseSpark" Faletra <eclipse@frozenbox.org>
+Installed-Size: 28
+Depends: parrot-meta-forensic, parrot-meta-full, parrot-meta-gpu, parrot-meta-pwtools, parrot-meta-rfid, parrot-meta-sdr, parrot-meta-voip, parrot-meta-web, parrot-meta-wireless
+Recommends: android-sdk, backdoor-factory, device-pharmer, doona, freeradius, hackersh, python-halberd, htshells, inguma, ismtp, linux-exploit-suggester, nishang, parsero, sandi, shellnoob, shellter, teamsploit, veil-evasion, veil-catapult, webhandler
+Section: metapackages
+Provides: parrot-tools-full
+Replaces: parrot-tools-full
+Enchances: parrot-tools-full
+Includes: parrot-tools-full
+Priority: optional
+Homepage: http://www.parrotsec.org
+Description: Parrot Security - all packages
+ This is Parrot Security OS, the most advanced penetration testing and security
+ auditing distribution.
+ .
+ This metapackage depends on all the applications that Parrot Security
+ provides on top of Debian GNU/Linux.

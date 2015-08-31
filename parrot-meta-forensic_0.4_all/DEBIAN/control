@@ -1,0 +1,16 @@
+Package: parrot-meta-forensic
+Source: parrot-meta
+Version: 0.4
+Architecture: all
+Maintainer: Lorenzo "EclipseSpark" Faletra <eclipse@frozenbox.org>
+Installed-Size: 28
+Recommends: afflib-tools, apktool, autopsy, bulk-extractor, cabextract, python-capstone, chkrootkit, creddump, dc3dd, dcfldd, ddrescue, dff, dissy, python-distorm3, dumpzilla, edb-debugger, ewf-tools, exiv2, extundelete, fcrackzip, firmware-mod-kit, flasm, foremost, galleta, gdb, gparted, guymager, inetsim, iphone-backup-analyzer, jad, javasnoop, libhivex-bin, lvm2, lynis, magicrescue, hashdeep, mdbtools, memdump, missidentify, nasm, ollydbg, p7zip-full, parted, pasco, pdfid, pdf-parser, pdgmail, peepdf, pev, polenum, radare2, rdd, readpst, recoverjpeg, recstudio, reglookup, regripper, rifiuti, rifiuti2, safecopy, samdump2, scalpel, scrounge-ntfs, sleuthkit, smali, sqlitebrowser, tcpdump, tcpflow, tcpick, tcpreplay, truecrack, unrar, upx-ucl, vinetto, volafox, volatility, wce, wireshark, xplico, yara, scripts4cf
+Section: metapackages
+Priority: optional
+Homepage: http://www.parrotsec.org
+Description: Parrot Securiy forensic tools
+ This is Parrot Security OS, the most advanced penetration testing and security
+ auditing distribution.
+ .
+ This metapackage depends on all the applications that Parrot Security
+ provides on top of Debian GNU/Linux.

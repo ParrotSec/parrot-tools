@@ -1,0 +1,16 @@
+Package: parrot-meta-voip
+Source: parrot-meta
+Version: 0.4
+Architecture: all
+Maintainer: Lorenzo "EclipseSpark" Faletra <eclipse@frozenbox.org>
+Installed-Size: 28
+Recommends: ace-voip, dnmap, enumiax, iaxflood, inviteflood, libfindrtp, nmap, ohrwurm, protos-sip, rtpbreak, rtpflood, rtpinsertsound, rtpmixsound, sctpscan, siparmyknife, sipcrack, sipp, sipvicious, voiphopper, wireshark
+Section: metapackages
+Priority: optional
+Homepage: http://www.parrotsec.org
+Description: Parrot Security VoIP tools
+ This is Parrot Security, the most advanced penetration testing and security
+ auditing distribution.
+ .
+ This metapackage depends on all the applications that Parrot Security
+ provides on top of Debian GNU/Linux.

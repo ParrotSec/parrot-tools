@@ -1,0 +1,5 @@
+parrot-tools (3.0+parrot0) testing; urgency=medium
+
+  * Debianize source code and import into new tree
+
+ -- Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>  Mon, 23 May 2016 17:47:41 +0200

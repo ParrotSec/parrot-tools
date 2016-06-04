@@ -2,7 +2,7 @@ Format: 3.0 (native)
 Source: parrot-tools
 Binary: parrot-tools, parrot-tools-full, parrot-tools-cloud, parrot-tools-arm, parrot-meta-all, parrot-meta-forensics, parrot-meta-full, parrot-meta-gpu, parrot-meta-pwtools, parrot-meta-rfid, parrot-meta-sdr, parrot-meta-voip, parrot-meta-web, parrot-meta-wireless
 Architecture: all
-Version: 3.0+parrot0
+Version: 3.0+parrot1
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>, Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Homepage: http://www.parrotsec.org/
@@ -25,8 +25,8 @@ Package-List:
  parrot-tools-cloud deb metapackages optional arch=all
  parrot-tools-full deb metapackages optional arch=all
 Checksums-Sha1:
- 2f32e7b77fbece1219e3578364a6200c34d18ca8 16140 parrot-tools_3.0+parrot0.tar.xz
+ 4f5f4d52547a0bc739c197edc2c779b5d1ac117f 16168 parrot-tools_3.0+parrot1.tar.xz
 Checksums-Sha256:
- 3ca3f051bef0b892a47fb28930547708979ee4d8418edb0809c47ce870d21a7b 16140 parrot-tools_3.0+parrot0.tar.xz
+ cb13425d2bcd5cfb149099b1060e4d723b8b7c1bf9b068835f3f285a04d4ad88 16168 parrot-tools_3.0+parrot1.tar.xz
 Files:
- 072755400e7a102ec1a9d22e18f0086f 16140 parrot-tools_3.0+parrot0.tar.xz
+ 60f04a9f4ad9f98922ea89b1a77e8a8c 16168 parrot-tools_3.0+parrot1.tar.xz

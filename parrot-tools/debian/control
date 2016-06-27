@@ -57,18 +57,24 @@ Description: Parrot Security OS - cloud edition tools metapackage
 
 
 
-Package: parrot-tools-arm
+Package: parrot-mini
 Architecture: all
-Recommends: aircrack-ng, airmode, apache-users, arping, asleap, bbqsql, bed, binwalk, bully, burpsuite, chkrootkit, chntpw, cisco-auditing-tool, cisco-global-exploiter, clusterd, cowpatty, creddump, crunch, criptator, cryptcat, cutycapt, cymothoa, davtest, dbd, dc3dd, dcfldd, ddrescue, dff, dhcpig, dirb, dirbuster, dissy, dmitry, dnmap, dns2tcp, dnschef, dnsenum, dnsrecon, dnstracer, dnswalk, dos2unix, dsniff, eapmd5pass, edb-debugger, enumiax, ethtool, ettercap-graphical, fcrackzip, fern-wifi-cracker, ferret, fierce, fimap, findmyhash, flasm, foremost, fping, fragroute, fragrouter, golismero, goofile, grabber, hash-identifier, heartbleech, hexinject, hexorbase, heybe, hotpatch, hping3, htshells, iaxflood, intersect, inundator, inurlbr, iodine, isr-evilgrade, jad, jboss-autopwn, john, joomscan, kismet, kismet-plugins, laudanum, libfindrtp, libnet1-dev, libpcap-dev, links, lynis, macchanger, magicrescue, magictree, maligno, maskprocessor, md5deep, mdk3, mc, medusa, metagoofil, miranda, miredo, mitmproxy, multimac, nasm, nbtscan, ncrack, netdiscover, netmask, nikto, nishang, nmap, zenmap, openssh-server, oscanner, outguess, p0f, parrot-cloud-controller, patator, plecost, powersploit, proxychains, proxystrike, proxytunnel, ptunnel, pwnat, reaver, recoverjpeg, reglookup, rig, rkhunter, safecopy, sandi, sbd, scalpel, sfuzz, shellinabox, siege, sipcrack, sipvicious, skipfish, slowloris, smtp-user-enum, snmpcheck, socat, spiderfoot, sqldict, sqlmap, sqlninja, sqlsus, sslcaudit, ssldump, sslscan, sslsniff, sslstrip, steghide, t50, tccf, tcpxtract, tcpick, tlssled, imsniff, tcptrace, tdsog, thc-ipv6, thc-ssl-dos, theharvester, themole, u3-pwn, ua-tester, udptunnel, unix-privesc-check, urlcrazy, volafox, volatility, w3af, wapiti, wce, webacoo, webshells, webslayer, websploit, weevely, whatweb, wireshark, etherwake, wpscan, xprobe, xspy, xsser, yasat, yersinia, zaproxy, zulucrypt, ftester, penmode2, parrot-anon, arduino, abootimg, smali, geany, chirp, soundmodem, minimodem
+Recommends: aircrack-ng, apache-users, arping, asleap, bbqsql, bed, bully, chntpw, cisco-auditing-tool, cisco-global-exploiter, clusterd, cowpatty, creddump, crunch, criptator, cryptcat, cutycapt, cymothoa, davtest, dbd, dc3dd, dcfldd, ddrescue, dhcpig, dirb, dirbuster, dissy, dmitry, dnmap, dns2tcp, dnschef, dnsenum, dnsrecon, dnstracer, dnswalk, dos2unix, dsniff, eapmd5pass, enumiax, ethtool, ettercap-graphical, fcrackzip, ferret, fierce, fimap, findmyhash foremost, fping, fragroute, fragrouter, golismero, goofile, grabber, hash-identifier, heartbleech, hexinject, hexorbase, heybe, hotpatch, hping3, htshells, iaxflood, intersect, inundator, inurlbr, iodine, isr-evilgrade, jboss-autopwn, john, joomscan, kismet, kismet-plugins, laudanum, libnet1-dev, libpcap-dev, links, lynis, macchanger, magictree, maligno, maskprocessor, md5deep, mdk3, mc, medusa, metagoofil, miranda, miredo, mitmproxy, multimac, nasm, nbtscan, ncrack, netdiscover, netmask, nishang, nmap, zenmap, openssh-server, oscanner, outguess, p0f, patator, plecost, powersploit, proxychains, proxystrike, proxytunnel, ptunnel, pwnat, reaver, reglookup, rig, safecopy, sbd, scalpel, sfuzz, shellinabox, siege, sipcrack, sipvicious, skipfish, slowloris, smtp-user-enum, snmpcheck, socat, spiderfoot, sqldict, sqlmap, sqlninja, sqlsus, sslcaudit, ssldump, sslscan, sslsniff, sslstrip, steghide, t50, tccf, tcpxtract, tcpick, tlssled, imsniff, tcptrace, tdsog, thc-ipv6, thc-ssl-dos, theharvester, themole, u3-pwn, ua-tester, udptunnel, unix-privesc-check, urlcrazy, volafox, volatility, wapiti, wce, webacoo, webshells, webslayer, websploit, weevely, whatweb, wireshark, etherwake, wpscan, xprobe, xspy, xsser, yersinia, zaproxy, zulucrypt, ftester, parrot-anon, smali, geany, soundmodem, minimodem
 Section: metapackages
 Priority: optional
-Description: Penetration testing and security auditing distribution, default system
+Description: Tools selection for Parrot Mini
  This is Parrot Security OS, the most advanced penetration testing and security
  auditing distribution.
- .
- This metapackage depends on all the packages that are installed by default
- on any Parrot system.
 
+
+Package: parrot-pico
+Architecture: all
+Recommends: nmap, tcpdump, aircrack-ng, dc3dd, dcfldd, ddrescue, dnschef, dnsenum, dsniff, ethtool, hash-identifier, hexinject, iodine, macchanger, mc, netdiscover, nbtscan, sbd, siege, slowloris, socat, sqlmap, sslscan, sslstrip, tccf, theharvester, webshells, weevely
+Section: metapackages
+Priority: optional
+Description: Tools selection for Parrot Pico
+ This is Parrot Security OS, the most advanced penetration testing and security
+ auditing distribution.
 
 Package: parrot-meta-all
 Architecture: all

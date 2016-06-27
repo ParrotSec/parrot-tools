@@ -1,8 +1,8 @@
 Format: 3.0 (native)
 Source: parrot-tools
-Binary: parrot-tools, parrot-tools-full, parrot-tools-cloud, parrot-tools-arm, parrot-meta-all, parrot-meta-forensics, parrot-meta-full, parrot-meta-gpu, parrot-meta-pwtools, parrot-meta-rfid, parrot-meta-sdr, parrot-meta-voip, parrot-meta-web, parrot-meta-wireless
+Binary: parrot-tools, parrot-tools-full, parrot-tools-cloud, parrot-mini, parrot-pico, parrot-meta-all, parrot-meta-forensics, parrot-meta-full, parrot-meta-gpu, parrot-meta-pwtools, parrot-meta-rfid, parrot-meta-sdr, parrot-meta-voip, parrot-meta-web, parrot-meta-wireless
 Architecture: all
-Version: 3.0+parrot1
+Version: 3.1+parrot0
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>, Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
 Homepage: http://www.parrotsec.org/
@@ -20,13 +20,14 @@ Package-List:
  parrot-meta-voip deb metapackages optional arch=all
  parrot-meta-web deb metapackages optional arch=all
  parrot-meta-wireless deb metapackages optional arch=all
+ parrot-mini deb metapackages optional arch=all
+ parrot-pico deb metapackages optional arch=all
  parrot-tools deb metapackages optional arch=all
- parrot-tools-arm deb metapackages optional arch=all
  parrot-tools-cloud deb metapackages optional arch=all
  parrot-tools-full deb metapackages optional arch=all
 Checksums-Sha1:
- 4f5f4d52547a0bc739c197edc2c779b5d1ac117f 16168 parrot-tools_3.0+parrot1.tar.xz
+ ed19dc49364f471acdc6f606b6f759f74a7ec4db 16288 parrot-tools_3.1+parrot0.tar.xz
 Checksums-Sha256:
- cb13425d2bcd5cfb149099b1060e4d723b8b7c1bf9b068835f3f285a04d4ad88 16168 parrot-tools_3.0+parrot1.tar.xz
+ 10065bfdb96b2afc400630c99d8c84d45fde2e7b8fbc4eef53f3ee6e467e6fae 16288 parrot-tools_3.1+parrot0.tar.xz
 Files:
- 60f04a9f4ad9f98922ea89b1a77e8a8c 16168 parrot-tools_3.0+parrot1.tar.xz
+ bedf65c0d12fd90d1d00c12dc465a0a2 16288 parrot-tools_3.1+parrot0.tar.xz

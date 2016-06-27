@@ -1,0 +1,84 @@
+Format: 1.8
+Date: Tue, 28 Jun 2016 00:20:29 +0200
+Source: parrot-tools
+Binary: parrot-tools parrot-tools-full parrot-tools-cloud parrot-mini parrot-pico parrot-meta-all parrot-meta-forensics parrot-meta-full parrot-meta-gpu parrot-meta-pwtools parrot-meta-rfid parrot-meta-sdr parrot-meta-voip parrot-meta-web parrot-meta-wireless
+Architecture: source all
+Version: 3.1+parrot0
+Distribution: testing
+Urgency: medium
+Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+Changed-By: Lorenzo "Palinuro" Faletra <eclipse@parrotsec.org>
+Description:
+ parrot-meta-all - Parrot Security - all packages
+ parrot-meta-forensics - Parrot Securiy forensic tools
+ parrot-meta-full - Parrot Security complete system
+ parrot-meta-gpu - Parrot Security GPU tools
+ parrot-meta-pwtools - Parrot Security password cracking tools
+ parrot-meta-rfid - Parrot Security RFID tools
+ parrot-meta-sdr - Parrot Security SDR tools
+ parrot-meta-voip - Parrot Security VoIP tools
+ parrot-meta-web - Parrot Security webapp assessment tools
+ parrot-meta-wireless - Parrot Security wireless tools
+ parrot-mini - Tools selection for Parrot Mini
+ parrot-pico - Tools selection for Parrot Pico
+ parrot-tools - Penetration testing and security auditing distribution, default s
+ parrot-tools-cloud - Parrot Security OS - cloud edition tools metapackage
+ parrot-tools-full - Metapackage that installs a FULL penetration testing environment
+Changes:
+ parrot-tools (3.1+parrot0) testing; urgency=medium
+ .
+   * add Parrot Mini and Parrot Pico support
+Checksums-Sha1:
+ 8adbb41c36f4e312b21dd9216fda97d30a6505fc 1763 parrot-tools_3.1+parrot0.dsc
+ 1d752a0f07790c3965f80516b978cd4037f45f4b 16284 parrot-tools_3.1+parrot0.tar.xz
+ 0307d3c3a33fa79c52201eb9167f7bd63a50ff53 12862 parrot-meta-all_3.1+parrot0_all.deb
+ ab2324c055dd9be45f6786b24dc9a8056ce92c6c 13140 parrot-meta-forensics_3.1+parrot0_all.deb
+ 7e5a73372923a7507430edb7d7c2bf9d7d4a397b 14572 parrot-meta-full_3.1+parrot0_all.deb
+ 5b8efc374430958692726d19faa9c8815efd8d72 12674 parrot-meta-gpu_3.1+parrot0_all.deb
+ 32622b76afdca94c57072ede4e6cd3d734c508d7 12906 parrot-meta-pwtools_3.1+parrot0_all.deb
+ b13e09f85be913af1e89b2d3363fd796765cf2c3 12688 parrot-meta-rfid_3.1+parrot0_all.deb
+ b2a249a4afccdac12d60bac771998aac79a0cd0c 12732 parrot-meta-sdr_3.1+parrot0_all.deb
+ c668b315755115638ef21ea1891f1d792ccff719 12778 parrot-meta-voip_3.1+parrot0_all.deb
+ 8473fa26f5b5f00f10af332d972b37057c2f8a9b 13234 parrot-meta-web_3.1+parrot0_all.deb
+ f876b3ccf9c3d4eeb00cab5e0f35e0bbbc89c9b6 12898 parrot-meta-wireless_3.1+parrot0_all.deb
+ 74d1283999b69c9c00f08b6ed4069eea321fb867 13534 parrot-mini_3.1+parrot0_all.deb
+ 48cb84ea09eaf4b4daad492eba28767d90b4046b 12768 parrot-pico_3.1+parrot0_all.deb
+ 6d959b128d0f84b12d00d45ee945d4936b9d0b7d 13380 parrot-tools-cloud_3.1+parrot0_all.deb
+ a44a32d48fea124a0a791ae01769d925e55b217b 12750 parrot-tools-full_3.1+parrot0_all.deb
+ f864f5fe313f7383afa2eba5a25dfe7a43f956f3 13990 parrot-tools_3.1+parrot0_all.deb
+Checksums-Sha256:
+ 9c8fbd440e8a0473254796cd46914d19674a322281f4e22810dc9c91293f9c2f 1763 parrot-tools_3.1+parrot0.dsc
+ 57dfe6a30acd8234c6878843edee4ad28a914c762de77922dfb2148d4df34579 16284 parrot-tools_3.1+parrot0.tar.xz
+ a24ee891530bb7096c1f5af57b3dd82e035de6f3858c3188ca80aa01eff06808 12862 parrot-meta-all_3.1+parrot0_all.deb
+ 814027970c067895e7f83b20b041916afd1b26ad8ad364f8d6f90190d396f595 13140 parrot-meta-forensics_3.1+parrot0_all.deb
+ bebce173d8943150a94bf8dcb0df2cfe838a8a5b9e99dd7056e5c84c8a18a9af 14572 parrot-meta-full_3.1+parrot0_all.deb
+ 1725eb5cdda7904e76e927228509739043ff73994eb4e331f5e9df67ea61dc2c 12674 parrot-meta-gpu_3.1+parrot0_all.deb
+ 830973423c2627bc317baa26491d7fab6f09fe080acb37ba2a0ccffafde9d9b4 12906 parrot-meta-pwtools_3.1+parrot0_all.deb
+ ad4407152a0c40e691ca501d835a3610ded17824d264af881c6b65af3931af2b 12688 parrot-meta-rfid_3.1+parrot0_all.deb
+ 5c116e719c3e3104313cc473964da9d7e763ecd75f80fc1cc268b6aa7f24185a 12732 parrot-meta-sdr_3.1+parrot0_all.deb
+ ba474fd4b2fe0d2456bed6b3da2a164fb2305a473987afbb6869895e415d1131 12778 parrot-meta-voip_3.1+parrot0_all.deb
+ 010cd888b8a4ac5147714b8403b42ca75c7b158b11cf2359c3248d25629d2cb9 13234 parrot-meta-web_3.1+parrot0_all.deb
+ 0d7a7490b528dd7a833059091b1f1c55dd1c997978f481e628ad367fb05f632d 12898 parrot-meta-wireless_3.1+parrot0_all.deb
+ 26742191d7766f9c6f6a44d56a9c5cacc41b021752d5ac8722f7246dc3666205 13534 parrot-mini_3.1+parrot0_all.deb
+ c518e8397f38c4b5ba1bead9fbc0a845987c02355707c24c6589f59da5476677 12768 parrot-pico_3.1+parrot0_all.deb
+ c0db212c5dc30429459339ef6a58a077829ba0c088d55f5805678b6101af299c 13380 parrot-tools-cloud_3.1+parrot0_all.deb
+ 06f6ad63b496b8b4f6c67afb7c3718e8391e89df94173c79d972cd9da102c0c3 12750 parrot-tools-full_3.1+parrot0_all.deb
+ 08d53e1b8083d354c77af9e3be61c31c3efc71094c5879ffd3dfaced11dfb2ee 13990 parrot-tools_3.1+parrot0_all.deb
+Files:
+ 8e685791e7fa935766076911a1fa86d3 1763 info optional parrot-tools_3.1+parrot0.dsc
+ 3a1105d1b3b101fe13148b65c3bbbda4 16284 info optional parrot-tools_3.1+parrot0.tar.xz
+ e36c34f7bb5e9e9e2bfce1ca739cdaf5 12862 metapackages optional parrot-meta-all_3.1+parrot0_all.deb
+ 567464daccbac0ba8cecdfa74b20e216 13140 metapackages optional parrot-meta-forensics_3.1+parrot0_all.deb
+ 1fca71ff60cc3c7af326216baaf1c18c 14572 metapackages optional parrot-meta-full_3.1+parrot0_all.deb
+ 55af4c40ab479a244a36f1bfa003ad84 12674 metapackages optional parrot-meta-gpu_3.1+parrot0_all.deb
+ 0a0214044031085d165950f9fb0d0ebf 12906 metapackages optional parrot-meta-pwtools_3.1+parrot0_all.deb
+ 2bcfaa02a2ed878cb587fdd927bce6c2 12688 metapackages optional parrot-meta-rfid_3.1+parrot0_all.deb
+ 317e10cd48d739eea9c7af40e57b9963 12732 metapackages optional parrot-meta-sdr_3.1+parrot0_all.deb
+ 405d5ce00f90eb57d20a93eeb2388c19 12778 metapackages optional parrot-meta-voip_3.1+parrot0_all.deb
+ 871e818b378f76305e33cc0adb0bcf41 13234 metapackages optional parrot-meta-web_3.1+parrot0_all.deb
+ 8886e49bbb7f22f21c23ad14ab3a6083 12898 metapackages optional parrot-meta-wireless_3.1+parrot0_all.deb
+ 25a75c7d67273c25c7e8af81b27314e1 13534 metapackages optional parrot-mini_3.1+parrot0_all.deb
+ 204150bd061b8ec61a0814957ceb7c62 12768 metapackages optional parrot-pico_3.1+parrot0_all.deb
+ 5fbf725747f48f6ac08da62c8dd8dd77 13380 metapackages optional parrot-tools-cloud_3.1+parrot0_all.deb
+ 3718f35d3e9b10962a2de032e82bab54 12750 metapackages optional parrot-tools-full_3.1+parrot0_all.deb
+ 56a52133e6e0114740077a031cbf2aa4 13990 metapackages optional parrot-tools_3.1+parrot0_all.deb

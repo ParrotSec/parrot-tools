@@ -26,8 +26,8 @@ Package-List:
  parrot-tools-cloud deb metapackages optional arch=all
  parrot-tools-full deb metapackages optional arch=all
 Checksums-Sha1:
- ed19dc49364f471acdc6f606b6f759f74a7ec4db 16288 parrot-tools_3.1+parrot0.tar.xz
+ 1d752a0f07790c3965f80516b978cd4037f45f4b 16284 parrot-tools_3.1+parrot0.tar.xz
 Checksums-Sha256:
- 10065bfdb96b2afc400630c99d8c84d45fde2e7b8fbc4eef53f3ee6e467e6fae 16288 parrot-tools_3.1+parrot0.tar.xz
+ 57dfe6a30acd8234c6878843edee4ad28a914c762de77922dfb2148d4df34579 16284 parrot-tools_3.1+parrot0.tar.xz
 Files:
- bedf65c0d12fd90d1d00c12dc465a0a2 16288 parrot-tools_3.1+parrot0.tar.xz
+ 3a1105d1b3b101fe13148b65c3bbbda4 16284 parrot-tools_3.1+parrot0.tar.xz

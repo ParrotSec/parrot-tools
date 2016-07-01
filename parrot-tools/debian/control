@@ -101,7 +101,7 @@ Recommends: afflib-tools, apktool, autopsy, bulk-extractor, cabextract, python-c
 Section: metapackages
 Priority: optional
 Homepage: http://www.parrotsec.org
-Description: Parrot Securiy forensic tools
+Description: Parrot Security forensic tools
  This is Parrot Security OS, the most advanced penetration testing and security
  auditing distribution.
  .

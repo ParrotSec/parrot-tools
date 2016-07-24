@@ -723,8 +723,6 @@ Recommends: android-sdk,
  shellnoob,
  shellter,
  teamsploit,
- veil-evasion,
- veil-catapult,
  webhandler
 Section: metapackages
 Provides: parrot-tools-full

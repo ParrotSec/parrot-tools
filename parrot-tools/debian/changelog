@@ -1,3 +1,9 @@
+parrot-tools (3.2+parrot0) testing; urgency=medium
+
+  * Add newly imported tools
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 24 Jul 2016 02:34:48 +0200
+
 parrot-tools (3.1+parrot0) testing; urgency=medium
 
   * add Parrot Mini and Parrot Pico support

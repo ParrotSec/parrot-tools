@@ -1,6 +1,6 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
 dpkg-buildpackage: info: source package parrot-tools
-dpkg-buildpackage: info: source version 3.2+parrot0
+dpkg-buildpackage: info: source version 3.3+parrot0
 dpkg-buildpackage: info: source distribution testing
 dpkg-buildpackage: info: source changed by Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
  dpkg-source --before-build parrot-tools
@@ -18,8 +18,8 @@ dpkg-source: warning: unknown information field 'Enchances' in input data in pac
 dpkg-source: warning: unknown information field 'Includes' in input data in package's section of control info file
 dpkg-source: warning: unknown information field 'Installed-Size' in input data in package's section of control info file
 dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building parrot-tools in parrot-tools_3.2+parrot0.tar.xz
-dpkg-source: info: building parrot-tools in parrot-tools_3.2+parrot0.dsc
+dpkg-source: info: building parrot-tools in parrot-tools_3.3+parrot0.tar.xz
+dpkg-source: info: building parrot-tools in parrot-tools_3.3+parrot0.dsc
  debian/rules build
 dh build
    dh_testdir
@@ -54,22 +54,22 @@ dpkg-gencontrol: warning: unknown information field 'Includes' in input data in 
 dpkg-gencontrol: warning: unknown information field 'Installed-Size' in input data in package's section of control info file
    dh_md5sums
    dh_builddeb
-dpkg-deb: building package 'parrot-tools' in '../parrot-tools_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-tools-full' in '../parrot-tools-full_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-tools-cloud' in '../parrot-tools-cloud_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-mini' in '../parrot-mini_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-pico' in '../parrot-pico_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-all' in '../parrot-meta-all_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-forensics' in '../parrot-meta-forensics_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-full' in '../parrot-meta-full_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-gpu' in '../parrot-meta-gpu_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-pwtools' in '../parrot-meta-pwtools_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-rfid' in '../parrot-meta-rfid_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-sdr' in '../parrot-meta-sdr_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-voip' in '../parrot-meta-voip_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-web' in '../parrot-meta-web_3.2+parrot0_all.deb'.
-dpkg-deb: building package 'parrot-meta-wireless' in '../parrot-meta-wireless_3.2+parrot0_all.deb'.
- dpkg-genchanges  >../parrot-tools_3.2+parrot0_amd64.changes
+dpkg-deb: building package 'parrot-tools' in '../parrot-tools_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-tools-full' in '../parrot-tools-full_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-tools-cloud' in '../parrot-tools-cloud_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-mini' in '../parrot-mini_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-pico' in '../parrot-pico_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-all' in '../parrot-meta-all_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-forensics' in '../parrot-meta-forensics_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-full' in '../parrot-meta-full_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-gpu' in '../parrot-meta-gpu_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-pwtools' in '../parrot-meta-pwtools_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-rfid' in '../parrot-meta-rfid_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-sdr' in '../parrot-meta-sdr_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-voip' in '../parrot-meta-voip_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-web' in '../parrot-meta-web_3.3+parrot0_all.deb'.
+dpkg-deb: building package 'parrot-meta-wireless' in '../parrot-meta-wireless_3.3+parrot0_all.deb'.
+ dpkg-genchanges  >../parrot-tools_3.3+parrot0_amd64.changes
 dpkg-genchanges: warning: unknown information field 'Enchances' in input data in package's section of control info file
 dpkg-genchanges: warning: unknown information field 'Includes' in input data in package's section of control info file
 dpkg-genchanges: warning: unknown information field 'Installed-Size' in input data in package's section of control info file
@@ -99,35 +99,40 @@ W: parrot-tools source: debhelper-but-no-misc-depends parrot-meta-web
 W: parrot-tools source: debhelper-but-no-misc-depends parrot-meta-wireless
 W: parrot-tools source: maintainer-also-in-uploaders
 W: parrot-tools source: changelog-should-mention-nmu
-W: parrot-tools source: source-nmu-has-incorrect-version-number 3.2+parrot0
-E: parrot-tools-full: copyright-file-contains-full-gpl-license
-E: parrot-tools-full: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-voip: copyright-file-contains-full-gpl-license
-E: parrot-meta-voip: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-pwtools: copyright-file-contains-full-gpl-license
-E: parrot-meta-pwtools: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-tools: copyright-file-contains-full-gpl-license
-E: parrot-tools: copyright-should-refer-to-common-license-file-for-gpl
+W: parrot-tools source: source-nmu-has-incorrect-version-number 3.3+parrot0
 E: parrot-mini: copyright-file-contains-full-gpl-license
 E: parrot-mini: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-rfid: copyright-file-contains-full-gpl-license
-E: parrot-meta-rfid: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-full: copyright-file-contains-full-gpl-license
-E: parrot-meta-full: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-tools-cloud: copyright-file-contains-full-gpl-license
-E: parrot-tools-cloud: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-forensics: copyright-file-contains-full-gpl-license
-E: parrot-meta-forensics: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-gpu: copyright-file-contains-full-gpl-license
-E: parrot-meta-gpu: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-all: copyright-file-contains-full-gpl-license
-E: parrot-meta-all: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-web: copyright-file-contains-full-gpl-license
-E: parrot-meta-web: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-tools: copyright-file-contains-full-gpl-license
+E: parrot-tools: copyright-should-refer-to-common-license-file-for-gpl
 E: parrot-pico: copyright-file-contains-full-gpl-license
 E: parrot-pico: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-web: copyright-file-contains-full-gpl-license
+E: parrot-meta-web: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-voip: copyright-file-contains-full-gpl-license
+E: parrot-meta-voip: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-all: copyright-file-contains-full-gpl-license
+E: parrot-meta-all: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-forensics: copyright-file-contains-full-gpl-license
+E: parrot-meta-forensics: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-tools-cloud: copyright-file-contains-full-gpl-license
+E: parrot-tools-cloud: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-gpu: copyright-file-contains-full-gpl-license
+E: parrot-meta-gpu: copyright-should-refer-to-common-license-file-for-gpl
 E: parrot-meta-wireless: copyright-file-contains-full-gpl-license
 E: parrot-meta-wireless: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-rfid: copyright-file-contains-full-gpl-license
+E: parrot-meta-rfid: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-pwtools: copyright-file-contains-full-gpl-license
+E: parrot-meta-pwtools: copyright-should-refer-to-common-license-file-for-gpl
 E: parrot-meta-sdr: copyright-file-contains-full-gpl-license
 E: parrot-meta-sdr: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-full: copyright-file-contains-full-gpl-license
+E: parrot-meta-full: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-tools-full: copyright-file-contains-full-gpl-license
+E: parrot-tools-full: copyright-should-refer-to-common-license-file-for-gpl
 Finished running lintian.
+Now signing dsc file...
+ signfile parrot-tools_3.3+parrot0.dsc Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+gpg: saltato "Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>": la chiave segreta non è disponibile
+gpg: /tmp/debsign.IEzhMK1l/parrot-tools_3.3+parrot0.dsc: clearsign failed: la chiave segreta non è disponibile
+debsign: gpg error occurred!  Aborting....

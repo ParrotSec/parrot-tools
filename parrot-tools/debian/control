@@ -1521,8 +1521,7 @@ Description: Parrot Security webapp assessment tools
 Package: parrot-meta-wireless
 Architecture: all
 Depends: parrot-meta-sdr
-Recommends: 3viltwin,
- aircrack-ng,
+Recommends: aircrack-ng,
  airmode,
  pyrit,
  asleap,
@@ -1543,6 +1542,7 @@ Recommends: 3viltwin,
  kismet,
  libfreefare-bin,
  libnfc-bin,
+ linset,
  macchanger,
  mdk3,
  mfcuk,

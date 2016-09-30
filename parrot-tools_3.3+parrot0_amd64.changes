@@ -28,57 +28,58 @@ Changes:
  parrot-tools (3.3+parrot0) testing; urgency=medium
  .
    * add kayak automotive tool
+   * add linset wifi tool
 Checksums-Sha1:
- 41fd787d0d402942e2dc94b52aad49103b2a04ac 1763 parrot-tools_3.3+parrot0.dsc
- 7e6b8536efc39729f8b2568776b8e7b852d35815 16416 parrot-tools_3.3+parrot0.tar.xz
- 9ec3895d4fc451ae87bbe39f2c8b93dfa725c936 12932 parrot-meta-all_3.3+parrot0_all.deb
- aed23d9cedf682e03285804960381ff76356a8c0 13224 parrot-meta-forensics_3.3+parrot0_all.deb
- 1dfdbd4f5e03e5d787dd9db5c708f387cbc34a5c 14692 parrot-meta-full_3.3+parrot0_all.deb
- 01eb718ed4c95ccecd963bbb9cc41a2386854eb7 12770 parrot-meta-gpu_3.3+parrot0_all.deb
- cb4810c3b6c31841ffdea98e9c518c38e38092e6 12990 parrot-meta-pwtools_3.3+parrot0_all.deb
- 36bcb3d63bbf74fd85a081fb4b049358c0503790 12778 parrot-meta-rfid_3.3+parrot0_all.deb
- 440be10dc9dd769af9a274d2e237480d9c692c60 12834 parrot-meta-sdr_3.3+parrot0_all.deb
- 33d22e2bd8f67d55e7a575b5c844fc1170bba5d2 12860 parrot-meta-voip_3.3+parrot0_all.deb
- eec07bd96781e33e5c29681a7dba8eea187dd782 13374 parrot-meta-web_3.3+parrot0_all.deb
- 2c54d8b3f74889439a792d0e7de179f958eaf3ea 12990 parrot-meta-wireless_3.3+parrot0_all.deb
- 54d2f581fae5b8ad8393ffb05776f61dc4ca1719 13614 parrot-mini_3.3+parrot0_all.deb
- e06b48fb15781647040c8b15352c001393b9eaa6 12846 parrot-pico_3.3+parrot0_all.deb
- a29a3e2dea09437c00513018ee04e9b776dc1a4b 13454 parrot-tools-cloud_3.3+parrot0_all.deb
- cd2649c97f3225ef9cecd1b8aa5044fac1791b3a 12816 parrot-tools-full_3.3+parrot0_all.deb
- a9091128970373f5d9922f299e55deb65f122ebc 14080 parrot-tools_3.3+parrot0_all.deb
+ ba187fbf7c29d924ace423aaf45f35e8679f7549 1763 parrot-tools_3.3+parrot0.dsc
+ e682ab6b4bf523d69763e84bc7e4247629faa3e3 16436 parrot-tools_3.3+parrot0.tar.xz
+ 6d3b8a61a4bced4642bdf1f126961c93087d9ffd 12942 parrot-meta-all_3.3+parrot0_all.deb
+ 58e43ec0c6513cb1c625e04122652a26c592c5b7 13238 parrot-meta-forensics_3.3+parrot0_all.deb
+ 1c81e974d07209f2c923c621743050b7dc2765f2 14686 parrot-meta-full_3.3+parrot0_all.deb
+ 6d580617504163dfc437cd86b0124f672bf586a1 12770 parrot-meta-gpu_3.3+parrot0_all.deb
+ 1848cd78fc689d51fe711536f667d438558d832f 13008 parrot-meta-pwtools_3.3+parrot0_all.deb
+ 08bc86d76b5409e18942409f29f99c881f74f4e6 12780 parrot-meta-rfid_3.3+parrot0_all.deb
+ a5794c8a41a84d692a8d2ee35144f0c64446df5c 12820 parrot-meta-sdr_3.3+parrot0_all.deb
+ 6244121e3c9a92644989a0bb754ded5c7fb7709a 12862 parrot-meta-voip_3.3+parrot0_all.deb
+ de0b22443400369970f8ddfa3bbd0a259019c9b7 13376 parrot-meta-web_3.3+parrot0_all.deb
+ ad2726f50e74b48d803bc8ee0324afb2fdc746a8 12988 parrot-meta-wireless_3.3+parrot0_all.deb
+ e7bbaac0ac5d4127cc734aaba0a1d00d06635e05 13618 parrot-mini_3.3+parrot0_all.deb
+ ec17129ccb105a1927d2f12511b1b71074c5e218 12854 parrot-pico_3.3+parrot0_all.deb
+ eff306386546bd8e7cd78dc06643e9eec35b1429 13470 parrot-tools-cloud_3.3+parrot0_all.deb
+ d7e2e99ca802f277dd6098b88c3609a5c47fe767 12836 parrot-tools-full_3.3+parrot0_all.deb
+ eea673562cbc4a79cd058bb900394dfeae0827d2 14084 parrot-tools_3.3+parrot0_all.deb
 Checksums-Sha256:
- 6909d95054137b526d3de247aa87283942197722151122d2ef75cd79338bfa18 1763 parrot-tools_3.3+parrot0.dsc
- dbffe8d74df897e931ef289c432c5a445b5a5e12635752055a75f66744224062 16416 parrot-tools_3.3+parrot0.tar.xz
- a55f6eb3d0ba4b0b58b1321721828659014087b9139a727eaa9f8824126656fd 12932 parrot-meta-all_3.3+parrot0_all.deb
- 8338df81a70eb75569d1379e67830285897c54bbceb4d7d567a7a0a015b41fb8 13224 parrot-meta-forensics_3.3+parrot0_all.deb
- 64787edef3b1e06e2f7c99029514c8d7bad34f8fd159aa39e68c8802eb33e998 14692 parrot-meta-full_3.3+parrot0_all.deb
- 68e6b3ceaea6067683920bd9801f0e2c6e3ec76c435b74a986af76edd29d6744 12770 parrot-meta-gpu_3.3+parrot0_all.deb
- a5f7b22fb0b2dcbc6375348cc1fe621d2647995f48227acf02803f8461f2c17b 12990 parrot-meta-pwtools_3.3+parrot0_all.deb
- 33c0b1ef1c06c49d2363cab873ff5d2da23794d0cb44057c8766ab8fe8d69475 12778 parrot-meta-rfid_3.3+parrot0_all.deb
- e1f9a8d69077089ce6f3611d9e4662a1a5b26d7419d88faf1a498ae2737a5d0d 12834 parrot-meta-sdr_3.3+parrot0_all.deb
- 09dbe135ac935a744ed7aab93f7301b1c0c7889e4522fcd37bf71b9d3d1d9126 12860 parrot-meta-voip_3.3+parrot0_all.deb
- cdace814bc4ea76d08eea2a4b32472a8668d061f5e8df6ba9720d0fa89841f62 13374 parrot-meta-web_3.3+parrot0_all.deb
- 2e3d5e624fc5d12f93ff2d904996ee88b100f26e3c55a584cb7934efa1444348 12990 parrot-meta-wireless_3.3+parrot0_all.deb
- e8b63d7ddff359f8997b33fc52e1ed11fffb1fc6b42f91173dff2437feb63362 13614 parrot-mini_3.3+parrot0_all.deb
- 2469bcc971b95649daca33d262ca94727730206a7a4a6cff6d52c4ee268da011 12846 parrot-pico_3.3+parrot0_all.deb
- ba34988cfb614ee81600161c84d009e91b431aecd8189431c5e378ec44f697c2 13454 parrot-tools-cloud_3.3+parrot0_all.deb
- b26eec283272c3f402d7670e839af3a82e4b868d06e7c2378c73313124b90761 12816 parrot-tools-full_3.3+parrot0_all.deb
- 3ae7defd534d3d7d18f41a37485ce5e3d9e81aa8dda6cf287c5106de97b20cdb 14080 parrot-tools_3.3+parrot0_all.deb
+ 04091b2b177076710d88f5340cabfcc9415d9d31befa576cb11677b1e7d1b1af 1763 parrot-tools_3.3+parrot0.dsc
+ c3a31a3a1e76a38e0699afa66df8dc7c325de5617aa5433c93e3d62cf3740c2d 16436 parrot-tools_3.3+parrot0.tar.xz
+ 99cb0d556403a7729a1c61b6af8d547f93d4ea4d230b154b85fd6971dee228d7 12942 parrot-meta-all_3.3+parrot0_all.deb
+ f4144517ae83fb467f8fcf5a30b275d55179bbb390da99f228bc0950f7367a61 13238 parrot-meta-forensics_3.3+parrot0_all.deb
+ b7569ff3b1772e7943c2e6ae03e934482b85335ccf3fe79fae0d4d9fcfef0226 14686 parrot-meta-full_3.3+parrot0_all.deb
+ b16844ce96e85adff94ce12198dd914b4c8a9ee45b808b033bc755102381efea 12770 parrot-meta-gpu_3.3+parrot0_all.deb
+ a620cfbfa99da7a7efb1e9b86b86a71af8af9dd2a2b37c38b282aaf00e117344 13008 parrot-meta-pwtools_3.3+parrot0_all.deb
+ 654016e817e0f695e0726ca907c27697116367cb47061e128c530a3be6ab3d1c 12780 parrot-meta-rfid_3.3+parrot0_all.deb
+ da679da313a06eb3347ff97de3ce5875186d5b534d2594116ce659178d8072b9 12820 parrot-meta-sdr_3.3+parrot0_all.deb
+ c8b260dd366816facf9b1dea3f7c5180ebf698ab742301aeadd17c8bd589b7d0 12862 parrot-meta-voip_3.3+parrot0_all.deb
+ ed8546108c77be8cd9d3b5e4993cb38c99034346401863362a9ade8626a52fbc 13376 parrot-meta-web_3.3+parrot0_all.deb
+ 7814bc2761f49e9fa67865d2631ac38c5597952c34ca648a0a2546aacc09e8f5 12988 parrot-meta-wireless_3.3+parrot0_all.deb
+ a6016129917086b9ec1c66509e4506f25c3ec291703a3afa49b428ab4c0e5822 13618 parrot-mini_3.3+parrot0_all.deb
+ af6ef6fac2c624f48779fb6dc9caecd762f7ca3d28e4a5e8d5630738b6c4fd42 12854 parrot-pico_3.3+parrot0_all.deb
+ f5af6b2307dcef42a68aa0c6d9ae1fe9bc1173d82c5138bd60f5c075a19c2e47 13470 parrot-tools-cloud_3.3+parrot0_all.deb
+ 54eed68dbaa4c3ac013d935728e44ab58ab5f01b211499bbb0d4618e85b7ee60 12836 parrot-tools-full_3.3+parrot0_all.deb
+ 1dceba5a2d86031bc6f32e11ceea0c42ee6a2fb31497b26f168f37087965cbbf 14084 parrot-tools_3.3+parrot0_all.deb
 Files:
- b9e439a1d4f60bb5192d35456979ccd6 1763 info optional parrot-tools_3.3+parrot0.dsc
- a373e6d30792cb285b3214522cb1f135 16416 info optional parrot-tools_3.3+parrot0.tar.xz
- 8a6bfe7047d183032c9896d2f2dc1e7c 12932 metapackages optional parrot-meta-all_3.3+parrot0_all.deb
- 75cf45fbf9231bd7098d0c7d73733cc0 13224 metapackages optional parrot-meta-forensics_3.3+parrot0_all.deb
- 316436833fe3aba7aee9ae34ef5a038d 14692 metapackages optional parrot-meta-full_3.3+parrot0_all.deb
- 0b077f6471d9068774b23ded011261bc 12770 metapackages optional parrot-meta-gpu_3.3+parrot0_all.deb
- a9bc513813c1f4206b381935108031a9 12990 metapackages optional parrot-meta-pwtools_3.3+parrot0_all.deb
- 730928a921a0fe4384a2fcb252c09759 12778 metapackages optional parrot-meta-rfid_3.3+parrot0_all.deb
- 368b9f8d09d827e20dc41bb42e4b5b07 12834 metapackages optional parrot-meta-sdr_3.3+parrot0_all.deb
- 6759d3de4e15f9d9b562d28972bd4fd8 12860 metapackages optional parrot-meta-voip_3.3+parrot0_all.deb
- 73e44ff8f61ae21b981059f448323a52 13374 metapackages optional parrot-meta-web_3.3+parrot0_all.deb
- 6bc56f16f68992f319dc5ae62e60b93b 12990 metapackages optional parrot-meta-wireless_3.3+parrot0_all.deb
- 5b86d8efddacdd5f25007dab76a61dc3 13614 metapackages optional parrot-mini_3.3+parrot0_all.deb
- 9bfe4346ba916a93177e340ab0225dbb 12846 metapackages optional parrot-pico_3.3+parrot0_all.deb
- 95be69ed9505be873e71a299585257ef 13454 metapackages optional parrot-tools-cloud_3.3+parrot0_all.deb
- 0ae38cdbfcacc45d478370f63028fea9 12816 metapackages optional parrot-tools-full_3.3+parrot0_all.deb
- 6abdeada54c1252a4783771d7c2b3601 14080 metapackages optional parrot-tools_3.3+parrot0_all.deb
+ 370655e1452e32012f845e593911bb12 1763 info optional parrot-tools_3.3+parrot0.dsc
+ 4f9f72fa66511b4d687938c40893eefc 16436 info optional parrot-tools_3.3+parrot0.tar.xz
+ e8f238964e8264c93f2fa2f6e82ea5ff 12942 metapackages optional parrot-meta-all_3.3+parrot0_all.deb
+ 6d7f1140425d6528fd8581fc4033216b 13238 metapackages optional parrot-meta-forensics_3.3+parrot0_all.deb
+ 0823dfc0e6b889bd362f4ff2791120cd 14686 metapackages optional parrot-meta-full_3.3+parrot0_all.deb
+ 4115dd2399ca8317ae37f012a07f42cf 12770 metapackages optional parrot-meta-gpu_3.3+parrot0_all.deb
+ 1a62d2d76443ecd5585a7d77a91db3cd 13008 metapackages optional parrot-meta-pwtools_3.3+parrot0_all.deb
+ 217931e80f31ace4f10a0ea510be4a2b 12780 metapackages optional parrot-meta-rfid_3.3+parrot0_all.deb
+ a2f70700a30ab8a3c260c6454bc7f159 12820 metapackages optional parrot-meta-sdr_3.3+parrot0_all.deb
+ 580fa05fd673d2ca5e58df9067ac7455 12862 metapackages optional parrot-meta-voip_3.3+parrot0_all.deb
+ bc6953c8eb9fd7dc12cf0877896b491e 13376 metapackages optional parrot-meta-web_3.3+parrot0_all.deb
+ a9afb7abfa09c114b563410f3f004d54 12988 metapackages optional parrot-meta-wireless_3.3+parrot0_all.deb
+ b3532083e5bcbaf2bf9df42c2ef33dcd 13618 metapackages optional parrot-mini_3.3+parrot0_all.deb
+ dcce007b36b7a9f9c9f18156e8aac05f 12854 metapackages optional parrot-pico_3.3+parrot0_all.deb
+ 35bfb0890247551148f67431445fa6ba 13470 metapackages optional parrot-tools-cloud_3.3+parrot0_all.deb
+ 84e0e4db33e4e70cede7fbae72c0ca73 12836 metapackages optional parrot-tools-full_3.3+parrot0_all.deb
+ 7df16eeb3f6ffbb32b5cd5da287f160b 14084 metapackages optional parrot-tools_3.3+parrot0_all.deb

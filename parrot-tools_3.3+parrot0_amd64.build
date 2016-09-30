@@ -100,39 +100,34 @@ W: parrot-tools source: debhelper-but-no-misc-depends parrot-meta-wireless
 W: parrot-tools source: maintainer-also-in-uploaders
 W: parrot-tools source: changelog-should-mention-nmu
 W: parrot-tools source: source-nmu-has-incorrect-version-number 3.3+parrot0
-E: parrot-mini: copyright-file-contains-full-gpl-license
-E: parrot-mini: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-tools: copyright-file-contains-full-gpl-license
-E: parrot-tools: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-pico: copyright-file-contains-full-gpl-license
-E: parrot-pico: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-web: copyright-file-contains-full-gpl-license
-E: parrot-meta-web: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-voip: copyright-file-contains-full-gpl-license
-E: parrot-meta-voip: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-all: copyright-file-contains-full-gpl-license
-E: parrot-meta-all: copyright-should-refer-to-common-license-file-for-gpl
 E: parrot-meta-forensics: copyright-file-contains-full-gpl-license
 E: parrot-meta-forensics: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-tools-cloud: copyright-file-contains-full-gpl-license
-E: parrot-tools-cloud: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-gpu: copyright-file-contains-full-gpl-license
-E: parrot-meta-gpu: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-wireless: copyright-file-contains-full-gpl-license
-E: parrot-meta-wireless: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-rfid: copyright-file-contains-full-gpl-license
-E: parrot-meta-rfid: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-pwtools: copyright-file-contains-full-gpl-license
-E: parrot-meta-pwtools: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-sdr: copyright-file-contains-full-gpl-license
-E: parrot-meta-sdr: copyright-should-refer-to-common-license-file-for-gpl
-E: parrot-meta-full: copyright-file-contains-full-gpl-license
-E: parrot-meta-full: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-all: copyright-file-contains-full-gpl-license
+E: parrot-meta-all: copyright-should-refer-to-common-license-file-for-gpl
 E: parrot-tools-full: copyright-file-contains-full-gpl-license
 E: parrot-tools-full: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-pwtools: copyright-file-contains-full-gpl-license
+E: parrot-meta-pwtools: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-tools-cloud: copyright-file-contains-full-gpl-license
+E: parrot-tools-cloud: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-sdr: copyright-file-contains-full-gpl-license
+E: parrot-meta-sdr: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-web: copyright-file-contains-full-gpl-license
+E: parrot-meta-web: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-tools: copyright-file-contains-full-gpl-license
+E: parrot-tools: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-wireless: copyright-file-contains-full-gpl-license
+E: parrot-meta-wireless: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-mini: copyright-file-contains-full-gpl-license
+E: parrot-mini: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-voip: copyright-file-contains-full-gpl-license
+E: parrot-meta-voip: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-pico: copyright-file-contains-full-gpl-license
+E: parrot-pico: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-rfid: copyright-file-contains-full-gpl-license
+E: parrot-meta-rfid: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-gpu: copyright-file-contains-full-gpl-license
+E: parrot-meta-gpu: copyright-should-refer-to-common-license-file-for-gpl
+E: parrot-meta-full: copyright-file-contains-full-gpl-license
+E: parrot-meta-full: copyright-should-refer-to-common-license-file-for-gpl
 Finished running lintian.
-Now signing dsc file...
- signfile parrot-tools_3.3+parrot0.dsc Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
-gpg: saltato "Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>": la chiave segreta non è disponibile
-gpg: /tmp/debsign.IEzhMK1l/parrot-tools_3.3+parrot0.dsc: clearsign failed: la chiave segreta non è disponibile
-debsign: gpg error occurred!  Aborting....

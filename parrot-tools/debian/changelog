@@ -1,3 +1,9 @@
+parrot-tools (3.3+parrot2) testing; urgency=medium
+
+  * Add missing whois tool
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 09 Oct 2016 15:23:50 +0200
+
 parrot-tools (3.3+parrot1) testing; urgency=medium
 
   * Add missing traceroute tool

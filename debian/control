@@ -752,8 +752,7 @@ Description: Parrot Security - all packages
 
 Package: parrot-meta-forensics
 Architecture: all
-Recommends: forensics-all,
- afflib-tools,
+Recommends: afflib-tools,
  apktool,
  autopsy,
  bulk-extractor,

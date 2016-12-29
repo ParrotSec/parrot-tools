@@ -1,3 +1,9 @@
+parrot-tools (3.4+parrot0) testing; urgency=medium
+
+  * Add quickhash
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 29 Dec 2016 19:13:04 +0100
+
 parrot-tools (3.3+parrot2) testing; urgency=medium
 
   * Add missing whois tool

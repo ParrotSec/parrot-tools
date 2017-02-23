@@ -1,3 +1,9 @@
+parrot-tools (3.5+parrot0) testing; urgency=medium
+
+  * Create parrot-crypto metapackage
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 24 Feb 2017 00:28:08 +0100
+
 parrot-tools (3.4+parrot1) testing; urgency=medium
 
   * Add sirikali

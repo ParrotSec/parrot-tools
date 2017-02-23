@@ -10,6 +10,22 @@ Build-Depends-Indep: pkg-config
 Homepage: http://www.parrotsec.org/
 
 
+Package: parrot-crypto
+Architecture: all
+Depends: zulucrypt, sirikali
+Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs
+Section: metapackages
+Priority: optional
+Homepage: http://www.parrotsec.org
+Description: Parrot Encryption Tools
+ This is Parrot Security,
+ the most advanced penetration testing and security
+ auditing distribution.
+ .
+ This metapackage depends on all the applications that Parrot Security
+ provides on top of Debian GNU/Linux.
+
+
 
 Package: parrot-tools
 Architecture: all

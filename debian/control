@@ -1,8 +1,8 @@
 Source: parrot-tools
 Priority: optional
-Maintainer: Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
-Uploaders: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>,
-           Lisetta "Sheireen" Ferrero <sheireen@frozenbox.org>
+Maintainer: Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
+           Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
 Standards-Version: 3.9.8
 Section: info
 Build-Depends: debhelper (>= 9)
@@ -261,7 +261,8 @@ Recommends: aircrack-ng,
  yersinia,
  zaproxy,
  zenmap,
- zulucrypt
+ zulucrypt,
+ sirikali
 Suggests: oclhashcat,
  blindelephant,
  casefile,
@@ -646,6 +647,7 @@ Recommends: aircrack-ng,
  yersinia,
  zaproxy,
  zulucrypt,
+ sirikali,
  ftester,
  parrot-anon,
  smali,

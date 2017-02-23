@@ -1,3 +1,9 @@
+parrot-tools (3.4+parrot1) testing; urgency=medium
+
+  * Add sirikali
+
+ -- Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>  Thu, 23 Feb 2017 23:31:28 +0100
+
 parrot-tools (3.4+parrot0) testing; urgency=medium
 
   * Add quickhash

@@ -1,3 +1,9 @@
+parrot-tools (3.5+parrot4) testing; urgency=medium
+
+  * Add anonsurf to parrot-crypto
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 02 Mar 2017 14:54:11 +0100
+
 parrot-tools (3.5+parrot3) testing; urgency=medium
 
   * Remove florence virtual keyboard

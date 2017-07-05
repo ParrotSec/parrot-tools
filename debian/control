@@ -1923,6 +1923,7 @@ Package: parrot-meta-wireless
 Architecture: any
 Depends: parrot-meta-sdr
 Recommends: aircrack-ng,
+ airgeddon,
  pyrit,
  asleap,
  bluelog,

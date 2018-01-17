@@ -19,11 +19,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Encryption Tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides the cryptographic tools.
 
 
 
@@ -296,11 +294,9 @@ Priority: optional
 Description: Penetration testing and security auditing distribution,
  default system
  This is Parrot Security OS,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the packages that are installed by default
- on any Parrot system.
+ This metapackage provides a standard set of security tools.
 
 
 Package: parrot-tools-full
@@ -318,6 +314,7 @@ Recommends: parrot-tools,
  parrot-meta-voip,
  parrot-meta-web,
  parrot-meta-wireless,
+ parrot-meta-automotive,
  parrot-crypto,
  apache2,
  atftpd,
@@ -723,8 +720,7 @@ Section: metapackages
 Priority: optional
 Description: Metapackage that installs a FULL penetration testing environment
  This is Parrot Security OS,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
  This metapackage depends on ALL the packages that are installed by default
  on a FULL Parrot system.
@@ -872,11 +868,10 @@ Section: metapackages
 Priority: optional
 Description: Parrot Security OS - cloud edition tools metapackage
  This is Parrot Security OS,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the packages that are installed by default
- on any Parrot cloud edition system.
+ This metapackage provides all the headless tools that can be useful on a
+ remotely controlled cloud environment.
 
 
 
@@ -1065,8 +1060,7 @@ Section: metapackages
 Priority: optional
 Description: Tools selection for Parrot Mini
  This is Parrot Security OS,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
 
 
 Package: parrot-pico
@@ -1115,8 +1109,7 @@ Section: metapackages
 Priority: optional
 Description: Tools selection for Parrot Pico
  This is Parrot Security OS,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
 
 Package: parrot-meta-all
 Architecture: all
@@ -1158,8 +1151,7 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security - all packages
  This is Parrot Security OS,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
  This metapackage depends on all the applications that Parrot Security
  provides on top of Debian GNU/Linux.
@@ -1252,12 +1244,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Securiy forensic tools
  This is Parrot Security OS,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
-
+ This metapackage provides all the digital forensics tools.
 
 Package: parrot-meta-full
 Architecture: all
@@ -1646,8 +1635,7 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security complete system
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
  This metapackage depends on all the applications that Parrot Security
  provides on top of Debian GNU/Linux.
@@ -1666,11 +1654,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security GPU tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides the gpu cracking tools.
 
 Package: parrot-meta-pwtools
 Architecture: any
@@ -1723,11 +1709,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security password cracking tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides all the password cracking and bruteforcing tools.
 
 Package: parrot-meta-rfid
 Architecture: all
@@ -1742,11 +1726,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security RFID tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides all the rfid testing tools.
 
 Package: parrot-meta-sdr
 Architecture: any
@@ -1768,11 +1750,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security SDR tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides all the software defined radio tools.
 
 Package: parrot-meta-voip
 Architecture: any
@@ -1801,11 +1781,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security VoIP tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides all the voip testing tools.
 
 Package: parrot-meta-web
 Architecture: any
@@ -1912,11 +1890,9 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security webapp assessment tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides all the web application testing tools.
 
 Package: parrot-meta-wireless
 Architecture: any
@@ -1966,8 +1942,22 @@ Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security wireless tools
  This is Parrot Security,
- the most advanced penetration testing and security
- auditing distribution.
+ a security focused GNU/Linux distribution.
  .
- This metapackage depends on all the applications that Parrot Security
- provides on top of Debian GNU/Linux.
+ This metapackage provides all the wireless testing tools.
+
+
+Package: parrot-meta-automotive
+Architecture: any
+Depends: parrot-meta-sdr
+Recommends: can-utils,
+ kayak,
+ wireshark
+Section: metapackages
+Priority: optional
+Homepage: http://www.parrotsec.org
+Description: Parrot Security automotive tools
+ This is Parrot Security,
+ a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the car-hacking/automotive tools.

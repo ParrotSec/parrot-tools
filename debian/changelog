@@ -1,3 +1,10 @@
+parrot-tools (3.9+parrot1) testing; urgency=medium
+
+  * Improve packages description.
+  * Add automotive tools and metapackages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 17 Jan 2018 15:37:25 +0100
+
 parrot-tools (3.8+parrot0) testing; urgency=medium
 
   * Improve tools selection.

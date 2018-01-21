@@ -1,3 +1,9 @@
+parrot-tools (3.9+parrot2) testing; urgency=medium
+
+  * Replace recordmydesktop with vokoscreen (thank you jeff).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 21 Jan 2018 22:05:51 +0100
+
 parrot-tools (3.9+parrot1) testing; urgency=medium
 
   * Improve packages description.

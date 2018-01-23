@@ -1,3 +1,10 @@
+parrot-tools (3.10+parrot1) testing; urgency=medium
+
+  * Add mat dependency to parrot-crypto.
+  * Make parrot-crypto provide the parrot-anon virtual package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 23 Jan 2018 17:24:09 +0100
+
 parrot-tools (3.9+parrot2) testing; urgency=medium
 
   * Replace recordmydesktop with vokoscreen (thank you jeff).

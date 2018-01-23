@@ -13,7 +13,8 @@ Homepage: http://www.parrotsec.org/
 Package: parrot-crypto
 Architecture: all
 Depends: zulucrypt, sirikali
-Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs, anonsurf
+Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs, anonsurf, mat
+Provides: parrot-anon
 Section: metapackages
 Priority: optional
 Homepage: http://www.parrotsec.org

@@ -1,3 +1,9 @@
+parrot-tools (3.10+parrot2) testing; urgency=medium
+
+  * Add cgdb debugger.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 20 Apr 2018 10:14:52 +0200
+
 parrot-tools (3.10+parrot1) testing; urgency=medium
 
   * Add mat dependency to parrot-crypto.

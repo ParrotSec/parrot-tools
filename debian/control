@@ -316,7 +316,7 @@ Recommends: parrot-tools,
  parrot-meta-wireless,
  parrot-meta-automotive,
  parrot-crypto,
- apache2,
+ nginx,
  atftpd,
  axel,
  exe2hexbat,
@@ -733,7 +733,7 @@ Package: parrot-tools-cloud
 Architecture: all
 Recommends: aircrack-ng,
  apache-users,
- apache2,
+ nginx,
  arping,
  chkrootkit,
  clusterd,
@@ -1792,7 +1792,8 @@ Description: Parrot Security VoIP tools
 
 Package: parrot-meta-web
 Architecture: any
-Recommends: apache2,
+Recommends: afl,
+ nginx,
  apache-users,
  arachni [amd64 i386],
  automater,

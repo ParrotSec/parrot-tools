@@ -264,6 +264,7 @@ Recommends:
  wifi-honey,
  wifiphisher,
  wifite,
+ wireguard,
  wireshark,
  wpscan,
  xprobe,

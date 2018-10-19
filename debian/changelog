@@ -1,3 +1,10 @@
+parrot-tools (4.0+parrot1) testing; urgency=medium
+
+  * Import push requests from gitlab.
+  * Update tools lists.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 19 Oct 2018 14:49:02 +0200
+
 parrot-tools (3.11+parrot1) testing; urgency=medium
 
   * Replace apache2 with nginx.

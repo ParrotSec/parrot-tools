@@ -3,11 +3,11 @@ Priority: optional
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
-Standards-Version: 3.9.8
+Standards-Version: 4.2.0
 Section: info
-Build-Depends: debhelper (>= 9)
+Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
-Homepage: http://www.parrotsec.org/
+Homepage: https://www.parrotsec.org/
 
 
 Package: parrot-crypto
@@ -17,7 +17,7 @@ Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs, anonsurf, mat
 Provides: parrot-anon
 Section: metapackages
 Priority: optional
-Homepage: http://www.parrotsec.org
+Homepage: https://www.parrotsec.org
 Description: Parrot Encryption Tools
  This is Parrot Security,
  a security focused GNU/Linux distribution.
@@ -340,15 +340,11 @@ Recommends: parrot-tools,
  php-mysql,
  php-pgsql,
  rfkill,
- samba,
  screen,
- snmpd,
- snmp,
  subversion,
  sudo,
  tcpdump,
  testdisk,
- tightvncserver,
  tftp,
  tmux,
  unrar | unar,
@@ -1073,7 +1069,6 @@ Recommends: nmap,
  aircrack-ng,
  bettercap,
  binwalk,
- dbd,
  dc3dd,
  dcfldd,
  ddrescue,
@@ -1086,7 +1081,6 @@ Recommends: nmap,
  foremost,
  hash-identifier,
  hexinject,
- iodine,
  macchanger,
  mc,
  mitmf,
@@ -1095,10 +1089,8 @@ Recommends: nmap,
  netdiscover,
  nbtscan,
  powersploit,
- sbd,
  siege,
  slowloris,
- socat,
  sqlmap,
  sslscan,
  sslstrip,

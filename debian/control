@@ -14,7 +14,7 @@ Package: parrot-crypto
 Architecture: all
 Depends: zulucrypt, sirikali
 Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs, anonsurf, mat
-Provides: parrot-anon
+Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -23,6 +23,22 @@ Description: Parrot Encryption Tools
  a security focused GNU/Linux distribution.
  .
  This metapackage provides the cryptographic tools.
+
+
+Package: parrot-privacy
+Architecture: all
+Depends: anonsurf, tor, torbrowser-launcher
+Recommends: ricochet-im, nyx, onionshare, onioncircuits, mat
+Suggests: parrot-crypto
+Provides: parrot-anon
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Privacy Protection Tools
+ This is Parrot Security,
+ a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the privacy protection tools.
 
 
 

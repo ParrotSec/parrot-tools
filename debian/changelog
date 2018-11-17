@@ -1,3 +1,9 @@
+parrot-tools (4.1+parrot1) testing; urgency=medium
+
+  * Create parrot-privacy metapackage.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 17 Nov 2018 04:07:25 +0100
+
 parrot-tools (4.0+parrot1) testing; urgency=medium
 
   * Import push requests from gitlab.

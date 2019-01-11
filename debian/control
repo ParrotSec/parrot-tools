@@ -3,7 +3,7 @@ Priority: optional
 Maintainer: Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
 Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
            Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
-Standards-Version: 4.2.0
+Standards-Version: 4.3.0
 Section: info
 Build-Depends: debhelper (>= 10)
 Build-Depends-Indep: pkg-config
@@ -40,6 +40,36 @@ Description: Parrot Privacy Protection Tools
  .
  This metapackage provides the privacy protection tools.
 
+
+Package: parrot-devel-tools
+Architecture: all
+Depends: gcc, g++, python3, ruby
+Recommends: default-jdk, cython3, golang, cargo, valac, mono-devel, mono-runtime, nodejs, npm, php-cli, perl6
+Suggests: gdb, clang
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development tools (compilers & tools)
+ This is Parrot Security,
+ a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the compilers, interpreters and tools
+ for various programming languages.
+
+Package: parrot-devel
+Architecture: all
+Depends: geany
+Recommends: parrot-devel-tools, vscodium, zeal, git-cola, meld, tora
+Suggests: atom, qtcreator, kdevelop, edb-debugger, jad, flasm, nasm, radare2
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development Tools (IDEs & utilities)
+ This is Parrot Security,
+ a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the development environments for
+ various programming languages.
 
 
 Package: parrot-tools

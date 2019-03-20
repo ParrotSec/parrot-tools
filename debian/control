@@ -18,7 +18,7 @@ Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
-Description: Parrot Encryption Tools
+Description: Parrot Encryption ToolsWhat if someday we would lack of donation, and someone said: - Hey! We should make paid version for our OS!? Yah i know it is a stupid example but our values will keep us far away from that shit.
  This is Parrot Security,
  a security focused GNU/Linux distribution.
  .
@@ -28,7 +28,7 @@ Description: Parrot Encryption Tools
 Package: parrot-privacy
 Architecture: all
 Depends: anonsurf, tor, torbrowser-launcher
-Recommends: ricochet-im, nyx, onionshare, onioncircuits, mat
+Recommends: ricochet-im, nyx, onionshare, onioncircuits, mat2
 Suggests: parrot-crypto
 Provides: parrot-anon
 Section: metapackages
@@ -41,11 +41,26 @@ Description: Parrot Privacy Protection Tools
  This metapackage provides the privacy protection tools.
 
 
+Package: parrot-devel
+Architecture: all
+Depends: geany
+Recommends: parrot-devel-tools, geany, vscodium, zeal, git-cola, meld, tora
+Suggests: parrot-devel-extra
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development Tools (IDEs & utilities)
+ This is Parrot Security,
+ a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the development environments for
+ various programming languages.
+
 Package: parrot-devel-tools
 Architecture: all
 Depends: gcc, g++, python3, ruby
-Recommends: default-jdk, cython3, golang, cargo, valac, mono-devel, mono-runtime, nodejs, npm, php-cli, perl6
-Suggests: gdb, clang
+Recommends: default-jdk, cython3, cargo, valac, mono-devel, mono-runtime, php-cli
+Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -56,20 +71,20 @@ Description: Parrot Development tools (compilers & tools)
  This metapackage provides the compilers, interpreters and tools
  for various programming languages.
 
-Package: parrot-devel
+Package: parrot-devel-extra
 Architecture: all
-Depends: geany
-Recommends: parrot-devel-tools, vscodium, zeal, git-cola, meld, tora
-Suggests: atom, qtcreator, kdevelop, edb-debugger, jad, flasm, nasm, radare2
+Depends: parrot-devel-tools
+Recommends: golang, nodejs, npm, perl6 atom, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, edb-debugger, jad, flasm, nasm, radare2, cmake, valgrind, git-cola, devscripts, build-essential
+Suggests: gdb, clang
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
-Description: Parrot Development Tools (IDEs & utilities)
+Description: Parrot Development tools (extra tools)
  This is Parrot Security,
  a security focused GNU/Linux distribution.
  .
- This metapackage provides the development environments for
- various programming languages.
+ This metapackage provides the compilers, interpreters and tools
+ for various programming languages.
 
 
 Package: parrot-tools
@@ -466,7 +481,6 @@ Recommends: parrot-tools,
  dhcpig,
  dirb,
  dirbuster,
- dissy,
  dmitry,
  dnmap,
  dns2tcp,
@@ -578,6 +592,7 @@ Recommends: parrot-tools,
  mfoc,
  mfterm,
  mimikatz,
+ minicom,
  miranda,
  miredo,
  missidentify,
@@ -616,7 +631,7 @@ Recommends: parrot-tools,
  pdfid,
  pdf-parser,
  pdgmail,
- peepdf,
+ python-peepdf,
  perl-cisco-copyconfig [amd64 i386],
  pev,
  pipal,
@@ -629,6 +644,7 @@ Recommends: parrot-tools,
  proxychains,
  proxystrike,
  proxytunnel,
+ pst-utils,
  ptunnel,
  pwnat,
  pyrit,
@@ -637,7 +653,7 @@ Recommends: parrot-tools,
  python-rfidiot,
  python-scapy,
  radare2,
- rainbowcrack [amd64 i386],
+ rainbowcrack [amd64],
  rake,
  rcracki-mt,
  readpst,
@@ -1164,30 +1180,35 @@ Depends: parrot-meta-forensics,
  parrot-meta-voip,
  parrot-meta-web,
  parrot-meta-wireless
-Recommends: android-sdk,
- backdoor-factory,
+Recommends: backdoor-factory,
  device-pharmer,
  doona,
  freeradius,
  hackersh,
  python-halberd,
  htshells,
+ ident-user-enum,
  inguma,
  ismtp,
  linux-exploit-suggester,
  nishang,
+ openvas,
  parsero,
  sandi,
+ set,
  shellnoob,
- shellter,
+ shellter [amd64 i386],
  teamsploit,
  traceroute,
+ veil [amd64 i386],
+ veil-evasion [amd64 i386],
+ veil-catapult [amd64 i386],
+ websploit,
  whois,
  webhandler
 Section: metapackages
 Provides: parrot-tools-full
 Replaces: parrot-tools-full
-Enchances: parrot-tools-full
 Includes: parrot-tools-full
 Priority: optional
 Homepage: http://www.parrotsec.org
@@ -1249,7 +1270,8 @@ Recommends:  afflib-tools,
  pdfid,
  pdf-parser,
  pdgmail,
- peepdf,
+ pst-utils,
+ python-peepdf,
  pev,
  polenum,
  radare2,
@@ -1294,6 +1316,7 @@ Description: Parrot Securiy forensic tools
 Package: parrot-meta-full
 Architecture: all
 Recommends: parrot-tools,
+ parrot-tools-full
  parrot-meta-sdr,
  0trace,
  acccheck,
@@ -1687,7 +1710,6 @@ Description: Parrot Security complete system
 
 Package: parrot-meta-gpu
 Architecture: any
-Installed-Size: 28
 Recommends: oclhashcat,
  oclhashcat [amd64 i386],
  pyrit,
@@ -1705,7 +1727,7 @@ Description: Parrot Security GPU tools
 Package: parrot-meta-pwtools
 Architecture: any
 Recommends: parrot-meta-gpu,
-  chntpw,
+ chntpw,
  cmospwd [amd64 i386],
  crunch,
  fcrackzip,
@@ -1732,7 +1754,7 @@ Recommends: parrot-meta-gpu,
  pdfcrack,
  pipal,
  polenum,
- rainbowcrack [amd64 i386],
+ rainbowcrack [amd64],
  rarcrack,
  rcracki-mt,
  rsmangler,
@@ -1777,12 +1799,12 @@ Description: Parrot Security RFID tools
 Package: parrot-meta-sdr
 Architecture: any
 Recommends: gnuradio,
- gnuradio,
  chirp,
  hackrf,
  kalibrate-rtl,
  rtlsdr-scanner,
  gqrx-sdr,
+ inspectrum,
  multimon-ng [amd64],
  uhd-host,
  uhd-images,
@@ -1869,7 +1891,7 @@ Recommends: afl,
  jsql,
  laudanum,
  lbd,
- maltegoce,
+ maltego,
  maltego-teeth,
  medusa,
  mitmproxy,
@@ -1909,14 +1931,13 @@ Recommends: afl,
  sslsniff,
  sslstrip,
  sslsplit,
- sslyze,
+ sslyze [amd64 i386 armel],
  stunnel4,
  thc-ssl-dos,
  tlssled,
  tnscmd10g,
  ua-tester,
  uniscan,
- vega [amd64 i386],
  wafw00f,
  wapiti,
  webacoo,
@@ -1996,6 +2017,7 @@ Package: parrot-meta-automotive
 Architecture: any
 Depends: parrot-meta-sdr
 Recommends: can-utils,
+ gscanbus,
  kayak,
  wireshark
 Section: metapackages

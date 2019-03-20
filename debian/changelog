@@ -1,3 +1,17 @@
+parrot-tools (4.6+parrot1) testing; urgency=medium
+
+  * Migrate mat to mat2.
+  * Integrate missing pentest tools.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 20 Mar 2019 01:40:52 +0100
+
+parrot-tools (4.2+parrot2) testing; urgency=medium
+
+  * Create parrot-devel-extra.
+  * Enchance parrot-devel metapackages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 14 Jan 2019 17:45:18 +0100
+
 parrot-tools (4.2+parrot1) testing; urgency=medium
 
   * Create parrot-devel and parrot-devel-tools metapackages.

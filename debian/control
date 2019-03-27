@@ -13,7 +13,7 @@ Homepage: https://www.parrotsec.org/
 Package: parrot-crypto
 Architecture: all
 Depends: zulucrypt, sirikali
-Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs, anonsurf, mat
+Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs, anonsurf
 Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
@@ -44,7 +44,7 @@ Description: Parrot Privacy Protection Tools
 Package: parrot-devel
 Architecture: all
 Depends: geany
-Recommends: parrot-devel-tools, geany, vscodium, zeal, git-cola, meld, tora
+Recommends: parrot-devel-tools, geany, vscodium, zeal, git-cola, meld, dbeaver
 Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional
@@ -74,7 +74,7 @@ Description: Parrot Development tools (compilers & tools)
 Package: parrot-devel-extra
 Architecture: all
 Depends: parrot-devel-tools
-Recommends: golang, nodejs, npm, perl6 atom, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, edb-debugger, jad, flasm, nasm, radare2, cmake, valgrind, git-cola, devscripts, build-essential
+Recommends: golang, nodejs, npm, perl6, atom, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, edb-debugger, jad, flasm, nasm, radare2, cmake, valgrind, git-cola, devscripts, build-essential
 Suggests: gdb, clang
 Section: metapackages
 Priority: optional

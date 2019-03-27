@@ -1,3 +1,9 @@
+parrot-tools (4.6+parrot3) testing; urgency=medium
+
+  * Don't generate arch-all packages with arch-vinculated dependencies.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 27 Mar 2019 23:57:40 +0100
+
 parrot-tools (4.6+parrot2) testing; urgency=medium
 
   * Replace TOra with dbeaver in parrot-devel.

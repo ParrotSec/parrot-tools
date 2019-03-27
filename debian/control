@@ -26,7 +26,7 @@ Description: Parrot Encryption ToolsWhat if someday we would lack of donation, a
 
 
 Package: parrot-privacy
-Architecture: all
+Architecture: any
 Depends: anonsurf, tor, torbrowser-launcher
 Recommends: ricochet-im, nyx, onionshare, onioncircuits, mat2
 Suggests: parrot-crypto
@@ -88,7 +88,7 @@ Description: Parrot Development tools (extra tools)
 
 
 Package: parrot-tools
-Architecture: all
+Architecture: any
 Recommends:
  aircrack-ng,
  apache-users,
@@ -789,7 +789,7 @@ Description: Metapackage that installs a FULL penetration testing environment
 
 
 Package: parrot-tools-cloud
-Architecture: all
+Architecture: any
 Recommends: aircrack-ng,
  apache-users,
  nginx,
@@ -937,7 +937,7 @@ Description: Parrot Security OS - cloud edition tools metapackage
 
 
 Package: parrot-mini
-Architecture: all
+Architecture: any
 Recommends: aircrack-ng,
  apache-users,
  arping,
@@ -1124,7 +1124,7 @@ Description: Tools selection for Parrot Mini
 
 
 Package: parrot-pico
-Architecture: all
+Architecture: any
 Recommends: nmap,
  tcpdump,
  0trace,
@@ -1170,7 +1170,7 @@ Description: Tools selection for Parrot Pico
  a security focused GNU/Linux distribution.
 
 Package: parrot-meta-all
-Architecture: all
+Architecture: any
 Depends: parrot-meta-forensics,
  parrot-meta-full,
  parrot-meta-gpu,
@@ -1209,7 +1209,6 @@ Recommends: backdoor-factory,
 Section: metapackages
 Provides: parrot-tools-full
 Replaces: parrot-tools-full
-Includes: parrot-tools-full
 Priority: optional
 Homepage: http://www.parrotsec.org
 Description: Parrot Security - all packages
@@ -1314,7 +1313,7 @@ Description: Parrot Securiy forensic tools
  This metapackage provides all the digital forensics tools.
 
 Package: parrot-meta-full
-Architecture: all
+Architecture: any
 Recommends: parrot-tools,
  parrot-tools-full
  parrot-meta-sdr,
@@ -1780,7 +1779,7 @@ Description: Parrot Security password cracking tools
  This metapackage provides all the password cracking and bruteforcing tools.
 
 Package: parrot-meta-rfid
-Architecture: all
+Architecture: any
 Recommends: libfreefare-bin,
  libnfc-bin,
  mfcuk,

@@ -1315,7 +1315,7 @@ Description: Parrot Securiy forensic tools
 Package: parrot-meta-full
 Architecture: any
 Recommends: parrot-tools,
- parrot-tools-full
+ parrot-tools-full,
  parrot-meta-sdr,
  0trace,
  acccheck,

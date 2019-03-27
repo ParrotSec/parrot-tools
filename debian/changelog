@@ -1,3 +1,9 @@
+parrot-tools (4.6+parrot2) testing; urgency=medium
+
+  * Replace TOra with dbeaver in parrot-devel.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 27 Mar 2019 23:29:12 +0100
+
 parrot-tools (4.6+parrot1) testing; urgency=medium
 
   * Migrate mat to mat2.

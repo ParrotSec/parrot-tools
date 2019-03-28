@@ -1,3 +1,10 @@
+parrot-tools (4.6+parrot4) testing; urgency=medium
+
+  * Move mono framework to parrot-deve-extra.
+  * Include radare2-cutter gui.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 28 Mar 2019 18:33:04 +0100
+
 parrot-tools (4.6+parrot3) testing; urgency=medium
 
   * Don't generate arch-all packages with arch-vinculated dependencies.

@@ -935,8 +935,6 @@ Description: Parrot Security OS - cloud edition tools metapackage
  remotely controlled cloud environment.
 
 
-
-
 Package: parrot-mini
 Architecture: any
 Recommends: aircrack-ng,
@@ -1201,12 +1199,12 @@ Recommends: backdoor-factory,
  shellter [amd64 i386],
  teamsploit,
  traceroute,
- veil [amd64 i386],
- veil-evasion [amd64 i386],
- veil-catapult [amd64 i386],
  websploit,
  whois,
  webhandler
+Suggests: veil [amd64 i386],
+ veil-evasion [amd64 i386],
+ veil-catapult [amd64 i386],
 Section: metapackages
 Provides: parrot-tools-full
 Replaces: parrot-tools-full

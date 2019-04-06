@@ -1,3 +1,9 @@
+parrot-tools (4.6+parrot6) testing; urgency=medium
+
+  * Add ftp support to parrot-meta-web.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 06 Apr 2019 18:44:47 +0200
+
 parrot-tools (4.6+parrot5) testing; urgency=medium
 
   * Move veil to suggests. 

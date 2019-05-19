@@ -59,7 +59,7 @@ Description: Parrot Development Tools (IDEs & utilities)
 Package: parrot-devel-tools
 Architecture: all
 Depends: gcc, g++, python3, ruby
-Recommends: default-jdk, cython3, cargo, valac, php-cli
+Recommends: default-jdk, cargo, valac, php-cli, golang-1.12
 Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional
@@ -74,7 +74,7 @@ Description: Parrot Development tools (compilers & tools)
 Package: parrot-devel-extra
 Architecture: all
 Depends: parrot-devel-tools
-Recommends: golang, nodejs, npm, mono-devel, mono-runtime, perl6, atom, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, edb-debugger, jad, flasm, nasm, radare2, radare2-cutter, cmake, valgrind, git-cola, devscripts, build-essential
+Recommends: nodejs, npm, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, radare2, radare2-cutter, cmake, valgrind, devscripts, build-essential
 Suggests: gdb, clang
 Section: metapackages
 Priority: optional

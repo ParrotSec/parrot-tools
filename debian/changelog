@@ -1,3 +1,10 @@
+parrot-tools (4.7+parrot1) testing; urgency=medium
+
+  * Add golang 1.12 to parrot-devel-tools.
+  * Move cython3 from parrot-devel to parrot-devel-extra.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 19 May 2019 15:26:26 +0200
+
 parrot-tools (4.6+parrot6) testing; urgency=medium
 
   * Add ftp support to parrot-meta-web.

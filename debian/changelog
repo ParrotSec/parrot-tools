@@ -1,3 +1,9 @@
+parrot-tools (4.7+parrot2) testing; urgency=medium
+
+  * Use standard golang release instead of testing one.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 21 May 2019 09:48:08 +0200
+
 parrot-tools (4.7+parrot1) testing; urgency=medium
 
   * Add golang 1.12 to parrot-devel-tools.

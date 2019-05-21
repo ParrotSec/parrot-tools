@@ -59,7 +59,7 @@ Description: Parrot Development Tools (IDEs & utilities)
 Package: parrot-devel-tools
 Architecture: all
 Depends: gcc, g++, python3, ruby
-Recommends: default-jdk, cargo, valac, php-cli, golang-1.12
+Recommends: default-jdk, cargo, valac, php-cli, golang
 Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional

@@ -18,7 +18,7 @@ Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
-Description: Parrot Encryption ToolsWhat if someday we would lack of donation, and someone said: - Hey! We should make paid version for our OS!? Yah i know it is a stupid example but our values will keep us far away from that shit.
+Description: Parrot Encryption Tools
  This is Parrot Security,
  a security focused GNU/Linux distribution.
  .
@@ -44,7 +44,7 @@ Description: Parrot Privacy Protection Tools
 Package: parrot-devel
 Architecture: all
 Depends: geany
-Recommends: parrot-devel-tools, geany, vscodium, zeal, git-cola, meld, dbeaver
+Recommends: parrot-devel-tools, geany, codium | vscodium, zeal, git-cola, meld, dbeaver
 Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional
@@ -82,6 +82,20 @@ Homepage: https://www.parrotsec.org
 Description: Parrot Development tools (extra tools)
  This is Parrot Security,
  a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the compilers, interpreters and tools
+ for various programming languages.
+
+Package: vscodium
+Architecture: all
+Depends: codium
+Replaces: vscodium (< 1.35)
+Breaks: vscodium (< 1.35)
+Section: metapackages
+Priority: optional
+Homepage: https://www.vscodium.com
+Description: Free/Libre Open Source Software Binaries of VSCode
+ Transitional package. Moved to codium.
  .
  This metapackage provides the compilers, interpreters and tools
  for various programming languages.

@@ -1,3 +1,33 @@
+parrot-tools (4.7+parrot7) testing; urgency=medium
+
+  * Re-include vscodium transitional metapackage. New codium release is now fixed.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 10 Jun 2019 12:32:05 +0200
+
+parrot-tools (4.7+parrot6) testing; urgency=medium
+
+  * Depend on vscodium if the codium package is not available.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sun, 09 Jun 2019 23:08:41 +0200
+
+parrot-tools (4.7+parrot5) testing; urgency=medium
+
+  * Remove new vscodium version, it is not ready for release.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Jun 2019 23:24:55 +0200
+
+parrot-tools (4.7+parrot4) testing; urgency=medium
+
+  * Make vscodium break old version.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Jun 2019 23:06:09 +0200
+
+parrot-tools (4.7+parrot3) testing; urgency=medium
+
+  * Add vscodium metapackage
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 08 Jun 2019 15:56:23 +0200
+
 parrot-tools (4.7+parrot2) testing; urgency=medium
 
   * Use standard golang release instead of testing one.

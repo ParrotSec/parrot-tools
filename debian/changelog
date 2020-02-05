@@ -1,3 +1,9 @@
+parrot-tools (4.8+parrot1) rolling-testing; urgency=medium
+
+  * Remove vinagre.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 05 Feb 2020 23:11:33 +0100
+
 parrot-tools (4.7+parrot7) testing; urgency=medium
 
   * Re-include vscodium transitional metapackage. New codium release is now fixed.

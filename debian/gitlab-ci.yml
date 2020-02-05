@@ -1,0 +1,2 @@
+include:
+ - https://nest.parrot.sh/infra/gitlab-ci/raw/master/build-artifacts.yml

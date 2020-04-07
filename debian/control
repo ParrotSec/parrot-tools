@@ -1,8 +1,7 @@
 Source: parrot-tools
 Priority: optional
-Maintainer: Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
-Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>,
-           Lisetta "Sheireen" Ferrero <sheireen@parrotsec.org>
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Uploaders: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Standards-Version: 4.3.0
 Section: info
 Build-Depends: debhelper (>= 10)
@@ -95,6 +94,34 @@ Section: metapackages
 Priority: optional
 Homepage: https://www.vscodium.com
 Description: Free/Libre Open Source Software Binaries of VSCode
+ Transitional package. Moved to codium.
+ .
+ This metapackage provides the compilers, interpreters and tools
+ for various programming languages.
+
+Package: vscode
+Architecture: all
+Depends: codium
+Replaces: vscodium (< 1.35)
+Breaks: vscodium (< 1.35)
+Section: metapackages
+Priority: optional
+Homepage: https://www.vscodium.com
+Description: Free/Libre Open Source Software Binaries of VSCode (VSCodium)
+ Transitional package. Moved to codium.
+ .
+ This metapackage provides the compilers, interpreters and tools
+ for various programming languages.
+
+Package: code
+Architecture: all
+Depends: codium
+Replaces: vscodium (< 1.35)
+Breaks: vscodium (< 1.35)
+Section: metapackages
+Priority: optional
+Homepage: https://www.vscodium.com
+Description: Free/Libre Open Source Software Binaries of VSCode (VSCodium)
  Transitional package. Moved to codium.
  .
  This metapackage provides the compilers, interpreters and tools

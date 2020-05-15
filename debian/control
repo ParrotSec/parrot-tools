@@ -73,7 +73,7 @@ Description: Parrot Development tools (compilers & tools)
 Package: parrot-devel-extra
 Architecture: all
 Depends: parrot-devel-tools
-Recommends: nodejs, npm, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, radare2, radare2-cutter, cmake, valgrind, devscripts, build-essential
+Recommends: parrot-devel-node, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, radare2, radare2-cutter, cmake, valgrind, devscripts, build-essential
 Suggests: gdb, clang
 Section: metapackages
 Priority: optional
@@ -84,6 +84,53 @@ Description: Parrot Development tools (extra tools)
  .
  This metapackage provides the compilers, interpreters and tools
  for various programming languages.
+
+Package: parrot-devel-node
+Architecture: all
+Depends: nodejs, npm
+Suggests: chromium
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development kit for NodeJS
+ This metapackage provides a ready to use set of tools to work with nodejs.
+
+Package: parrot-devel-dotnet
+Architecture: all
+Depends: mono-devel, mono-runtime
+Recommends: mono-complete, mono-tools
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development kit for .NET/MONO
+ This metapackage provides a ready to use set of tools to work with Microsoft .NET and MONO.
+
+Package: parrot-devel-golang
+Architecture: all
+Depends: golang-go
+Recommends: golang, golang-src, golang-doc,
+            golang-easyjson, golang-github-gin-gonic-gin-dev, golang-github-go-chef-chef-dev,
+            golang-github-go-errors-errors-dev, golang-github-go-kit-kit-dev, golang-github-go-ini-ini-dev,
+            golang-github-go-ldap-ldap-dev, golang-github-go-logfmt-logfmt-dev, golang-github-go-redis-redis-dev,
+            golang-github-gorhill-cronexpr-dev, golang-github-gorilla-context-dev, golang-github-gorilla-csrf-dev,
+            golang-github-boj-redistore-dev, golang-github-gorilla-handlers-dev, golang-github-gorilla-mux-dev,
+            golang-github-gorilla-pat-dev, golang-github-gorilla-rpc-dev, golang-github-gorilla-securecookie-dev,
+            golang-github-gorilla-sessions-dev, golang-github-gorilla-websocket-dev, golang-github-gotk3-gotk3-dev,
+            golang-golang-x-crypto-dev, golang-golang-x-image-dev, golang-golang-x-mod-dev, golang-golang-x-net-dev,
+            golang-golang-x-sys-dev, golang-golang-x-time-dev, golang-golang-x-tools-dev,
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development kit for Go (Golang)
+ This metapackage provides a ready to use set of tools to work with the Go programming language (Golang).
+        
+Suggests: chromium
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development kit for NodeJS
+ This metapackage provides a ready to use set of tools to work with nodejs.
+
 
 Package: vscodium
 Architecture: all
@@ -275,7 +322,7 @@ Recommends:
  parrot-crypto,
  pasco,
  patator,
- penmode2,
+ payloadsallthethings,
  pixiewps,
  plecost,
  pompem,
@@ -666,6 +713,7 @@ Recommends: parrot-tools,
  pasco,
  passing-the-hash,
  patator,
+ payloadsallthethings,
  pdfid,
  pdf-parser,
  pdgmail,
@@ -870,6 +918,7 @@ Recommends: aircrack-ng,
  heybe,
  hping3,
  iaxflood,
+ impacket-scripts,
  intersect,
  inundator,
  iodine,
@@ -904,6 +953,7 @@ Recommends: aircrack-ng,
  p0f,
  patator,
  plecost,
+ payloadsallthethings,
  powerfuzzer,
  powersploit,
  proxychains,
@@ -920,6 +970,8 @@ Recommends: aircrack-ng,
  siege,
  skipfish,
  slowloris,
+ smbclient,
+ smbmap,
  smtp-user-enum,
  snmpcheck,
  socat,
@@ -1032,6 +1084,7 @@ Recommends: aircrack-ng,
  hping3,
  htshells,
  iaxflood,
+ impacket-scripts,
  intersect,
  inundator,
  inurlbr,
@@ -1074,6 +1127,8 @@ Recommends: aircrack-ng,
  p0f,
  patator,
  plecost,
+ payloadsallthethings,
+ powercat,
  powersploit,
  proxychains,
  proxystrike,
@@ -1093,6 +1148,8 @@ Recommends: aircrack-ng,
  sipvicious,
  skipfish,
  slowloris,
+ smbmap,
+ smbclient,
  smtp-user-enum,
  snmpcheck,
  socat,
@@ -1177,6 +1234,7 @@ Recommends: nmap,
  foremost,
  hash-identifier,
  hexinject,
+ impacket-scripts,
  macchanger,
  mc,
  mitmf,
@@ -1187,6 +1245,8 @@ Recommends: nmap,
  powersploit,
  siege,
  slowloris,
+ smbmap,
+ smbclient,
  sqlmap,
  sslscan,
  sslstrip,
@@ -1581,6 +1641,7 @@ Recommends: parrot-tools,
  pixiewps,
  plecost,
  polenum,
+ powercat,
  powerfuzzer,
  powersploit,
  protos-sip,

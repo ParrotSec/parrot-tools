@@ -124,14 +124,6 @@ Homepage: https://www.parrotsec.org
 Description: Parrot Development kit for Go (Golang)
  This metapackage provides a ready to use set of tools to work with the Go programming language (Golang).
         
-Suggests: chromium
-Section: metapackages
-Priority: optional
-Homepage: https://www.parrotsec.org
-Description: Parrot Development kit for NodeJS
- This metapackage provides a ready to use set of tools to work with nodejs.
-
-
 Package: vscodium
 Architecture: all
 Depends: codium

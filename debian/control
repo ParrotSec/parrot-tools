@@ -12,7 +12,7 @@ Homepage: https://www.parrotsec.org/
 Package: parrot-crypto
 Architecture: all
 Depends: zulucrypt, sirikali
-Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs, anonsurf
+Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs
 Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
@@ -27,7 +27,7 @@ Description: Parrot Encryption Tools
 Package: parrot-privacy
 Architecture: any
 Depends: anonsurf, tor, torbrowser-launcher
-Recommends: ricochet-im, nyx, onionshare, onioncircuits, mat2
+Recommends: ricochet-im, nyx, onionshare, onioncircuits, mat2, anonsurf-gtk
 Suggests: parrot-crypto
 Provides: parrot-anon
 Section: metapackages
@@ -104,6 +104,16 @@ Priority: optional
 Homepage: https://www.parrotsec.org
 Description: Parrot Development kit for .NET/MONO
  This metapackage provides a ready to use set of tools to work with Microsoft .NET and MONO.
+
+Package: parrot-devel-nim
+Architecture: all
+Depends: nim
+Recommends: libnim-gintro-dev
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development kit for Nim lang
+ This metapackage provides a ready to use set of tools to work with the NIM programming language.
 
 Package: parrot-devel-golang
 Architecture: all

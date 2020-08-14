@@ -1,3 +1,10 @@
+parrot-tools (4.10.1) rolling-testing; urgency=medium
+
+  * Add anonsurf-gtk.
+  * Implement parrot-devel-nim.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Aug 2020 12:46:22 +0200
+
 parrot-tools (4.10) rolling-testing; urgency=medium
 
   * Update openvas (now GVM).

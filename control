@@ -179,23 +179,17 @@ Description: Free/Libre Open Source Software Binaries of VSCode (VSCodium)
 Package: parrot-tools-info
 Architecture: all
 Depends:
-  0trace,
   amap,
   arping,
   braa,
-  casefile,
   cdpsnarf,
   thc-ipv6,
   dmitry,
   dnsenum,
   dnsmap,
-  dnsrecon,
-  dnstracer,
-  dnswalk,
   enum4linux,
   etherape,
   fierce,
-  fping,
   fragrouter,
   ftester,
   gobuster,
@@ -209,7 +203,6 @@ Depends:
   metagoofil,
   nbtscan,
   netdiscover,
-  netmask,
   nmap,
   onesixtyone,
   p0f,
@@ -238,11 +231,6 @@ Package: parrot-tools-vuln
 Architecture: all
 Depends:
   bed,
-  cisco-auditing-tool,
-  cisco-global-exploiter,
-  cisco-ocs,
-  cisco-torch,
-  copy-router-config,
   thc-ipv6,
   dhcpig,
   enumiax,
@@ -401,12 +389,10 @@ Depends:
   findmyhash,
   hash-identifier,
   hashcat,
-  hashid,
   hydra,
   john,
   johnny,
   pack,
-  medusa,
   ncrack,
   onesixtyone,
   ophcrack-cli,
@@ -445,11 +431,6 @@ Depends:
   bluesnarfer,
   btscanner,
   bully,
-  cisco-auditing-tool,
-  cisco-global-exploiter,
-  cisco-ocs,
-  cisco-torch,
-  copy-router-config,
   cowpatty,
   crackle,
   eapmd5pass,
@@ -495,7 +476,6 @@ Depends:
   hamster-sidejack,
   hexinject,
   isr-evilgrade,
-  macchanger,
   mitmproxy,
   netsniff-ng,
   rebind,
@@ -531,7 +511,6 @@ Depends:
   guymager,
   hashdeep,
   magicrescue,
-  mc,
   missidentify,
   pasco,
   pdf-parser,
@@ -552,7 +531,6 @@ Depends:
   volafox,
   volatility,
   xplico,
-  yara,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for x
@@ -572,7 +550,6 @@ Description: Pentest tool list for x
 Package: parrot-tools-reversing
 Architecture: all
 Depends:
-  clang,
   dex2jar,
   edb-debugger,
   flasm,
@@ -589,7 +566,6 @@ Description: Pentest tool list for x
 Package: parrot-tools-report
 Architecture: all
 Depends:
-  casefile,
   cutycapt,
   eyewitness,
   faraday-client,

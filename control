@@ -189,8 +189,6 @@ Depends:
   etherape,
   hping3,
   ike-scan,
-  intrace,
-  irpas,
   lbd,
   maltego,
   masscan,
@@ -200,13 +198,8 @@ Depends:
   nmap,
   p0f,
   recon-ng,
-  ssldump,
-  sslh,
-  sslscan,
-  sslyze,
   theharvester,
   unicornscan,
-  urlcrazy,
   python3-shodan,
 Section: metapackages
 Priority: optional
@@ -218,6 +211,8 @@ Depends:
   fierce,
   fragrouter,
   ftester,
+  irpas,
+  intrace,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for information gathering
@@ -238,6 +233,7 @@ Depends:
   dirbuster,
   whatweb,
   enumiax,
+  sslscan,
 Section: metapackages
 Priority: optional
 Description: Enumeration tools
@@ -246,6 +242,7 @@ Description: Enumeration tools
 Package: parrot-tools-vuln
 Architecture: all
 Depends:
+  sslyze,
   bed,
   thc-ipv6,
   dhcpig,
@@ -343,6 +340,7 @@ Depends:
   weevely,
   windows-binaries,
   webshells,
+  sslh,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for x
@@ -454,6 +452,7 @@ Depends:
   darkstat,
   dnschef,
   dsniff,
+  ssldump,
   driftnet,
   etherape,
   ettercap-graphical,

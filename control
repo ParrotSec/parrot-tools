@@ -237,7 +237,6 @@ Depends:
   gvm,
   iaxflood,
   inviteflood,
-  lynis,
   dsniff,
   ohrwurm,
   protos-sip,
@@ -252,9 +251,7 @@ Depends:
   slowhttptest,
   spike,
   sipvicious,
-  t50,
   thc-ssl-dos,
-  unix-privesc-check,
   voiphopper,
   yersinia,
 Section: metapackages
@@ -266,11 +263,9 @@ Description: Pentest tool list for x
 Package: parrot-tools-web
 Architecture: all
 Depends:
-  apache-users,
   burpsuite,
   cadaver,
   commix,
-  cutycapt,
   davtest,
   dirb,
   dirbuster,
@@ -282,11 +277,9 @@ Depends:
   jsql-injection,
   nikto,
   padbuster,
-  plecost,
   skipfish,
   uniscan,
   wapiti,
-  webscarab,
   websploit,
   wfuzz,
   whatweb,
@@ -369,6 +362,8 @@ Depends:
   powersploit,
   passing-the-hash,
   wce,
+  lynis,
+  unix-privesc-check,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for x
@@ -387,17 +382,14 @@ Depends:
   crunch,
   fcrackzip,
   findmyhash,
-  hash-identifier,
+  hashid,
   hashcat,
   hydra,
   john,
   johnny,
-  pack,
-  ncrack,
   onesixtyone,
   ophcrack-cli,
   ophcrack,
-  patator,
   pdfcrack,
   pipal,
   pixiewps,
@@ -499,7 +491,6 @@ Depends:
   binwalk,
   sleuthkit,
   bulk-extractor,
-  chkrootkit,
   dc3dd,
   dcfldd,
   ddrescue,
@@ -523,7 +514,6 @@ Depends:
   regripper,
   rifiuti,
   rifiuti2,
-  rkhunter,
   safecopy,
   scalpel,
   scrounge-ntfs,
@@ -566,7 +556,6 @@ Description: Pentest tool list for x
 Package: parrot-tools-report
 Architecture: all
 Depends:
-  cutycapt,
   eyewitness,
   faraday-client,
   metagoofil,

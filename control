@@ -181,18 +181,12 @@ Architecture: all
 Depends:
   amap,
   arping,
-  braa,
   cdpsnarf,
   thc-ipv6,
   dmitry,
   dnsenum,
   dnsmap,
-  enum4linux,
   etherape,
-  fierce,
-  fragrouter,
-  ftester,
-  gobuster,
   hping3,
   ike-scan,
   intrace,
@@ -204,27 +198,49 @@ Depends:
   nbtscan,
   netdiscover,
   nmap,
-  onesixtyone,
   p0f,
   recon-ng,
-  smbmap,
-  smtp-user-enum,
-  snmpcheck,
   ssldump,
   sslh,
   sslscan,
   sslyze,
-  swaks,
   theharvester,
   unicornscan,
   urlcrazy,
-  wireshark,
-  xprobe,
-  ismtp,
   python3-shodan,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for information gathering
+  more descriptions here
+
+Package: parrot-tools-info-extra
+Depends:
+  fierce,
+  fragrouter,
+  ftester,
+Section: metapackages
+Priority: optional
+Description: Pentest tool list for information gathering
+  more descriptions here
+
+Package: parrot-tools-enum
+Package: parrot-tools-info-extra
+Depends:
+  gobuster,
+  smbmap,
+  smtp-user-enum,
+  snmpcheck,
+  onesixtyone,
+  enum4linux,
+  ismtp,
+  swaks,
+  dirb,
+  dirbuster,
+  whatweb,
+  enumiax,
+Section: metapackages
+Priority: optional
+Description: Enumeration tools
   more descriptions here
 
 Package: parrot-tools-vuln
@@ -233,7 +249,6 @@ Depends:
   bed,
   thc-ipv6,
   dhcpig,
-  enumiax,
   gvm,
   iaxflood,
   inviteflood,
@@ -254,35 +269,16 @@ Depends:
   thc-ssl-dos,
   voiphopper,
   yersinia,
-Section: metapackages
-Priority: optional
-Description: Pentest tool list for x
-  more descriptions here
-
-
-Package: parrot-tools-web
-Architecture: all
-Depends:
   burpsuite,
   cadaver,
   commix,
   davtest,
-  dirb,
-  dirbuster,
   fimap,
-  gobuster,
-  httrack,
-  jboss-autopwn,
   joomscan,
-  jsql-injection,
   nikto,
   padbuster,
   skipfish,
-  uniscan,
-  wapiti,
-  websploit,
   wfuzz,
-  whatweb,
   wig,
   wpscan,
   xsser,
@@ -291,7 +287,6 @@ Section: metapackages
 Priority: optional
 Description: Pentest tool list for x
   more descriptions here
-
 
 Package: parrot-tools-pwn
 Architecture: all
@@ -312,8 +307,7 @@ Depends:
   shellnoob,
   sidguesser,
   sqlmap,
-  termineter,
-  websploit,
+  websploit, # TODO keep an eye on this
   unicorn-magic,
 Section: metapackages
 Priority: optional

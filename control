@@ -219,7 +219,6 @@ Description: Pentest tool list for information gathering
   more descriptions here
 
 Package: parrot-tools-enum
-Package: parrot-tools-info-extra
 Depends:
   gobuster,
   smbmap,
@@ -234,6 +233,7 @@ Depends:
   whatweb,
   enumiax,
   sslscan,
+  wig,
 Section: metapackages
 Priority: optional
 Description: Enumeration tools
@@ -242,32 +242,31 @@ Description: Enumeration tools
 Package: parrot-tools-vuln
 Architecture: all
 Depends:
-  sslyze,
   bed,
+  ohrwurm,
+  spike,
+  wfuzz,
+  sslyze,
   thc-ipv6,
   dhcpig,
   gvm,
   iaxflood,
   inviteflood,
   dsniff,
-  ohrwurm,
   protos-sip,
   rtpbreak,
   rtpflood,
   rtpinsertsound,
   rtpmixsound,
   sctpscan,
-  sfuzz,
   siege,
   sipp,
   slowhttptest,
-  spike,
   sipvicious,
   thc-ssl-dos,
   voiphopper,
   yersinia,
   burpsuite,
-  cadaver,
   commix,
   davtest,
   fimap,
@@ -275,8 +274,6 @@ Depends:
   nikto,
   padbuster,
   skipfish,
-  wfuzz,
-  wig,
   wpscan,
   xsser,
   zaproxy,

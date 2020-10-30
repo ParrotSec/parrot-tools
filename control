@@ -189,7 +189,6 @@ Depends:
   etherape,
   hping3,
   ike-scan,
-  lbd,
   maltego,
   masscan,
   metagoofil,
@@ -234,6 +233,7 @@ Depends:
   enumiax,
   sslscan,
   wig,
+  lbd,
 Section: metapackages
 Priority: optional
 Description: Enumeration tools
@@ -272,7 +272,6 @@ Depends:
   fimap,
   joomscan,
   nikto,
-  padbuster,
   skipfish,
   wpscan,
   xsser,
@@ -296,13 +295,14 @@ Depends:
   metasploit-framework,
   msfpc,
   oscanner,
-  pompem,
+  pompem, # TODO replace by Parrot's native tool
   set,
   shellnoob,
   sidguesser,
   sqlmap,
   websploit, # TODO keep an eye on this
   unicorn-magic,
+  padbuster,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for x
@@ -317,7 +317,6 @@ Depends:
   cryptcat,
   dbd,
   dns2tcp,
-  exe2hexbat,
   hyperion,
   iodine,
   laudanum,

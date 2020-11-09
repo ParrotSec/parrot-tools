@@ -507,8 +507,6 @@ Depends:
   scalpel,
   scrounge-ntfs,
   vinetto,
-  volafox,
-  volatility,
   xplico,
 Section: metapackages
 Priority: optional

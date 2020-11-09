@@ -520,7 +520,6 @@ Depends:
   scalpel,
   scrounge-ntfs,
   vinetto,
-  volafox,
   xplico,
 Section: metapackages
 Priority: optional
@@ -893,7 +892,6 @@ Recommends: aircrack-ng,
  udptunnel,
  unix-privesc-check,
  urlcrazy,
- volafox,
  wapiti,
  wce,
  webacoo,

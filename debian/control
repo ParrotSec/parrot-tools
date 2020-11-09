@@ -521,7 +521,6 @@ Depends:
   scrounge-ntfs,
   vinetto,
   volafox,
-  volatility,
   xplico,
 Section: metapackages
 Priority: optional
@@ -895,7 +894,6 @@ Recommends: aircrack-ng,
  unix-privesc-check,
  urlcrazy,
  volafox,
- volatility,
  wapiti,
  wce,
  webacoo,

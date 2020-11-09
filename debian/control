@@ -324,7 +324,6 @@ Package: parrot-tools-maintain
 Architecture: all
 Depends:
   backdoor-factory,
-  bdfproxy,
   cryptcat,
   dbd,
   dns2tcp,
@@ -453,7 +452,6 @@ Description: Pentest tool list for wireless exploitation
 Package: parrot-tools-sniff
 Architecture: all
 Depends:
-  bdfproxy,
   bettercap,
   chaosreader,
   darkstat,

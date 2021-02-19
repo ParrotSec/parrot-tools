@@ -519,9 +519,9 @@ Description: Pentest tool list for forensics
 
 Package: parrot-tools-automotive
 Architecture: all
-Depends: parrot-meta-sdr
 Recommends: can-utils,
 Depends:
+  parrot-meta-sdr,
   kayak,
   gscanbus,
 Section: metapackages
@@ -575,7 +575,6 @@ Recommends: parrot-tools,
   parrot-tools-reversing,
   parrot-tools-report,
   parrot-crypto,
-
 Section: metapackages
 Priority: optional
 Description: Metapackage that installs a FULL penetration testing environment
@@ -584,7 +583,6 @@ Description: Metapackage that installs a FULL penetration testing environment
  .
  This metapackage depends on ALL the packages that are installed by default
  on a FULL Parrot system.
-
 
 Package: parrot-tools-cloud
 Architecture: any

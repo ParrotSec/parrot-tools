@@ -224,7 +224,7 @@ Depends:
   inspy,
   sherlock,
   certgraph,
-  goofile-nim,
+  nmapsi4,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for information gathering

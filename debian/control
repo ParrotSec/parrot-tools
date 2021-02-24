@@ -13,7 +13,7 @@ Homepage: https://www.parrotsec.org/
 
 Package: parrot-crypto
 Architecture: all
-Depends: zulucrypt, sirikali
+Depends: zulucrypt, sirikali, encryptpad
 Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, gocryptfs
 Suggests: parrot-privacy
 Section: metapackages

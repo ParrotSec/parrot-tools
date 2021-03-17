@@ -5,7 +5,7 @@ Uploaders:
   Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
   Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
 Standards-Version: 4.5.1
-Section: info
+Section: metapackages
 Build-Depends: debhelper (>= 12)
 Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/

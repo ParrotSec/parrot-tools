@@ -28,8 +28,8 @@ Description: Parrot Encryption Tools
 
 Package: parrot-privacy
 Architecture: any
-Depends: anonsurf-cli, tor, torbrowser-launcher
-Recommends: ricochet-im, nyx, mat2, anonsurf-gtk
+Depends: anonsurf, tor, torbrowser-launcher
+Recommends: ricochet-im, nyx, mat2, anonsurf-gtk, anonsurf-cli
 Suggests: parrot-crypto, onionshare, onioncircuits
 Provides: parrot-anon
 Section: metapackages

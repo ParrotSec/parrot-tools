@@ -522,7 +522,6 @@ Architecture: all
 Recommends: can-utils,
 Depends:
   parrot-meta-sdr,
-  kayak,
   gscanbus,
 Section: metapackages
 Priority: optional

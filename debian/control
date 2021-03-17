@@ -45,7 +45,7 @@ Description: Parrot Privacy Protection Tools
 Package: parrot-devel
 Architecture: all
 Depends: geany
-Recommends: parrot-devel-tools, geany, codium | vscodium, zeal, git-cola, meld, dbeaver
+Recommends: parrot-devel-tools, geany, codium | vscodium, zeal, git-cola, meld, dbeaver, git
 Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional

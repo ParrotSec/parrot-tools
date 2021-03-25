@@ -26,6 +26,20 @@ Description: Parrot Encryption Tools
  This metapackage provides the cryptographic tools.
 
 
+Package: parrot-zsh
+Architecture: all
+Depends: zsh
+Recommends: zsh-autocomplete, zsh-syntax-highlighting, zsh-autosuggestions
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot ZSH configuration
+ This is Parrot Security,
+ a security focused GNU/Linux distribution.
+ .
+ This metapackage provides the default plugin for Parrot ZSH shell.
+
+
 Package: parrot-privacy
 Architecture: any
 Depends: anonsurf, tor, torbrowser-launcher

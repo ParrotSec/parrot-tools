@@ -249,6 +249,7 @@ Description: Pentest tool list for information gathering
 Package: parrot-tools-vuln
 Architecture: all
 Depends:
+  afl,
   bed,
   thc-ipv6,
   dhcpig,

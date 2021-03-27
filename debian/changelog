@@ -1,5 +1,8 @@
 parrot-tools (4.11.3) rolling; urgency=medium
 
+  [ Lorenzo "Palinuro" Faletra ]
+  * Add gtkhash to forensic tools.
+
   [ Nong Hoang Tu ]
   * Change Depends to Recommends in parrot-tools metapackages.
 

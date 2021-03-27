@@ -1,3 +1,10 @@
+parrot-tools (4.11.3) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * Change Depends to Recommends in parrot-tools metapackages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 27 Mar 2021 07:12:39 +0100
+
 parrot-tools (4.11.2) rolling; urgency=medium
 
   [ Nong Hoang Tu ]

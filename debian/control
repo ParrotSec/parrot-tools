@@ -299,6 +299,7 @@ Depends:
   wpscan,
   xsser,
   zaproxy,
+  wafw00f,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for web analysis
@@ -563,6 +564,7 @@ Architecture: all
 Depends:
   eyewitness,
   faraday-client,
+  faraday,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for reporting
@@ -587,6 +589,7 @@ Recommends: parrot-tools,
   parrot-tools-reversing,
   parrot-tools-report,
   parrot-crypto,
+  vokoscreen
 Section: metapackages
 Priority: optional
 Description: Metapackage that installs a FULL penetration testing environment

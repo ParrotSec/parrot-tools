@@ -300,6 +300,7 @@ Depends:
   xsser,
   zaproxy,
   wafw00f,
+  parsero,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for web analysis
@@ -525,6 +526,7 @@ Depends:
   scrounge-ntfs,
   vinetto,
   xplico,
+  inetsim
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for forensics

@@ -1,3 +1,53 @@
+parrot-tools (4.11) rolling; urgency=medium
+
+  [ Nong Hoang Tu ]
+  * New meta tool sections
+  * First removal of old tools
+  * Remove more tools
+  * moving enumeration and remove some
+  * Remove more, move ssl
+  * add more remove and merge
+  * move some tools
+  * Change name of anonsurf to anonsurf-cli
+  * bump draft version for metapackage for 4.11
+  * new draft with descriptions
+  * Update format of copyright
+  * remove old parrot-meta and edit automotive
+  * remove multimac
+  * remove hotpatch
+  * remove volatility
+  * remove volafox (py2removal)
+  * remove bdfproxy (py2removal)
+  * remove fimap (py2Removal)
+  * remove some dropped tools
+  * fix syntax and remove some tools
+  * Keep cleaning old tools
+  * some more clean
+  * Move parrot-mini to parrot-tools-common
+  * add goofile-nim to preinstalled list
+  * remove dbd and cryptcat
+  * Remove some tool as repo clean
+  * Fix some syntax bugs in control file
+  * chnage standard version to 4.5.1
+  * Replace goofile-nim (not on repo) by nmapsi4
+  * Add encryptpad to parrot-crypto again
+  * Move onionshare and onioncircuits to suggest instead of request
+  * Change section to metapackages
+  * Move anonsurf-cli from Depends to Recommends
+  * Fix duplicate gocryptfs in same section
+  * Add git to parrot-devel
+  * Remove kayak
+  * Restore onionshare in recommends
+  * remove midnight commander
+  * remove goofile-nim (inreleased)
+  * Add powershell to devel-tools
+  * Add parrot-zsh for zsh support
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Push package.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 27 Mar 2021 01:17:06 +0100
+
 parrot-tools (4.10.1) rolling-testing; urgency=medium
 
   * Add anonsurf-gtk.

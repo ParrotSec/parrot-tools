@@ -59,7 +59,7 @@ Description: Parrot Privacy Protection Tools
 Package: parrot-devel
 Architecture: all
 Depends: geany
-Recommends: parrot-devel-tools, geany, codium | vscodium, zeal, git-cola, meld, dbeaver, git
+Recommends: parrot-devel-tools, geany, codium | vscodium, zeal, git-cola, meld, dbeaver, git, sqlitebrowser, firmware-mod-kit
 Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional
@@ -196,6 +196,7 @@ Description: Free/Libre Open Source Software Binaries of VSCode (VSCodium)
 Package: parrot-tools-info
 Architecture: all
 Depends:
+  arp-scan,
   0trace,
   amap,
   arping,
@@ -250,7 +251,7 @@ Package: parrot-tools-vuln
 Architecture: all
 Depends:
   afl,
-  bed,
+  doona,
   thc-ipv6,
   dhcpig,
   enumiax,
@@ -272,6 +273,8 @@ Depends:
   unix-privesc-check,
   voiphopper,
   yersinia,
+  siparmyknife,
+  sctpscan,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for vulnerability analysis
@@ -327,6 +330,7 @@ Depends:
   sqlmap,
   websploit,
   unicorn-magic,
+  backdoor-factory,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for exploitation
@@ -336,7 +340,8 @@ Description: Pentest tool list for exploitation
 Package: parrot-tools-maintain
 Architecture: all
 Depends:
-  backdoor-factory,
+  ncat-w32,
+  powercat,
   dns2tcp,
   hyperion,
   iodine,
@@ -415,6 +420,7 @@ Depends:
   twofi,
   wordlists,
   device-pharmer,
+  statsprocessor,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for password attack
@@ -432,6 +438,7 @@ Depends:
   blueranger,
   bluesnarfer,
   btscanner,
+  bluez-hcidump,
   bully,
   cowpatty,
   crackle,
@@ -469,6 +476,8 @@ Depends:
   darkstat,
   dnschef,
   dsniff,
+  sniffjoke,
+  tcpflow,
   driftnet,
   etherape,
   ettercap-graphical,
@@ -498,6 +507,11 @@ Package: parrot-tools-forensic
 Architecture: all
 Depends:
   afflib-tools,
+  dumpzilla,
+  extundelete,
+  rifiuti,
+  ewf-tools,
+  cabextract,
   autopsy,
   binwalk,
   sleuthkit,
@@ -527,7 +541,15 @@ Depends:
   scrounge-ntfs,
   vinetto,
   xplico,
-  inetsim
+  inetsim,
+  forensic-artifacts,
+  galleta,
+  gpp-decrypt,
+  guymager,
+  yara,
+  cisco-ocs,
+  cisco-torch,
+  copy-router-config,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for forensics
@@ -593,7 +615,13 @@ Recommends: parrot-tools,
   parrot-tools-reversing,
   parrot-tools-report,
   parrot-crypto,
-  vokoscreen
+  vokoscreen,
+  impacket-scripts,
+  ngrep,
+  netsed,
+  osslsigncode,
+  arpwatch,
+  vlan,
 Section: metapackages
 Priority: optional
 Description: Metapackage that installs a FULL penetration testing environment
@@ -658,6 +686,7 @@ Recommends: aircrack-ng,
  proxytunnel,
  ptunnel,
  pwnat,
+ crackmapexec,
  rainbowcrack,
  reaver,
  sbd,
@@ -713,7 +742,7 @@ Architecture: any
 Recommends: aircrack-ng,
  arping,
  asleap,
- bed,
+ doona,
  bully,
  chntpw,
  cowpatty,

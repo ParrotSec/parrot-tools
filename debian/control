@@ -546,6 +546,7 @@ Depends:
   galleta,
   gpp-decrypt,
   guymager,
+  smartmontools,
   yara,
   cisco-ocs,
   cisco-torch,

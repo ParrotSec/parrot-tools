@@ -1,3 +1,12 @@
+parrot-tools (4.11.1) rolling; urgency=medium
+
+  * Add wafw00f, faraday, vokoscreen
+  * Restore linux-exploit-suggester
+  * restore parsero
+  * restore afl
+
+ -- Nong Hoang Tu <dmknght@parrotsec.org>  Sat, 27 Mar 2021 04:18:35 +0100
+
 parrot-tools (4.11) rolling; urgency=medium
 
   [ Nong Hoang Tu ]

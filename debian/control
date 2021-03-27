@@ -195,7 +195,7 @@ Description: Free/Libre Open Source Software Binaries of VSCode (VSCodium)
 
 Package: parrot-tools-info
 Architecture: all
-Depends:
+Recommends:
   arp-scan,
   0trace,
   amap,
@@ -249,7 +249,7 @@ Description: Pentest tool list for information gathering
 
 Package: parrot-tools-vuln
 Architecture: all
-Depends:
+Recommends:
   afl,
   doona,
   thc-ipv6,
@@ -285,7 +285,7 @@ Description: Pentest tool list for vulnerability analysis
 
 Package: parrot-tools-web
 Architecture: all
-Depends:
+Recommends:
   burpsuite,
   commix,
   davtest,
@@ -313,7 +313,7 @@ Description: Pentest tool list for web analysis
 
 Package: parrot-tools-pwn
 Architecture: all
-Depends:
+Recommends:
   armitage,
   beef-xss,
   commix,
@@ -339,7 +339,7 @@ Description: Pentest tool list for exploitation
 
 Package: parrot-tools-maintain
 Architecture: all
-Depends:
+Recommends:
   ncat-w32,
   powercat,
   dns2tcp,
@@ -369,7 +369,7 @@ Description: Pentest tool list for maintaining access
 
 Package: parrot-tools-postexploit
 Architecture: all
-Depends:
+Recommends:
   mimikatz,
   powersploit,
   passing-the-hash,
@@ -385,7 +385,7 @@ Description: Pentest tool list for post exploitation
 
 Package: parrot-tools-password
 Architecture: all
-Depends:
+Recommends:
   brutespray,
   cewl,
   changeme,
@@ -429,7 +429,7 @@ Description: Pentest tool list for password attack
 
 Package: parrot-tools-wireless
 Architecture: all
-Depends:
+Recommends:
   aircrack-ng,
   airgeddon,
   asleap,
@@ -469,7 +469,7 @@ Description: Pentest tool list for wireless exploitation
 
 Package: parrot-tools-sniff
 Architecture: all
-Depends:
+Recommends:
   bettercap,
   chaosreader,
   darkstat,
@@ -504,7 +504,7 @@ Description: Pentest tool list for network sniffing
 
 Package: parrot-tools-forensic
 Architecture: all
-Depends:
+Recommends:
   afflib-tools,
   dumpzilla,
   extundelete,
@@ -560,7 +560,7 @@ Description: Pentest tool list for forensics
 Package: parrot-tools-automotive
 Architecture: all
 Recommends: can-utils,
-Depends:
+Recommends:
   parrot-meta-sdr,
   gscanbus,
 Section: metapackages
@@ -571,7 +571,7 @@ Description: Pentest tool list for vehicle hacking
 
 Package: parrot-tools-reversing
 Architecture: all
-Depends:
+Recommends:
   clang,
   dex2jar,
   edb-debugger,

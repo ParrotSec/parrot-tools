@@ -560,7 +560,6 @@ Description: Pentest tool list for forensics
 Package: parrot-tools-automotive
 Architecture: all
 Recommends: can-utils,
-Recommends:
   parrot-meta-sdr,
   gscanbus,
 Section: metapackages

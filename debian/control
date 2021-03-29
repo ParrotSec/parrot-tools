@@ -275,6 +275,9 @@ Recommends:
   yersinia,
   siparmyknife,
   sctpscan,
+  cisco-ocs,
+  cisco-torch,
+  copy-router-config,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for vulnerability analysis
@@ -547,9 +550,6 @@ Recommends:
   guymager,
   smartmontools,
   yara,
-  cisco-ocs,
-  cisco-torch,
-  copy-router-config,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for forensics

@@ -1,3 +1,9 @@
+parrot-tools (4.11.4) rolling; urgency=medium
+
+  * Use rizin by default instead of radare2.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 13 Apr 2021 15:01:13 +0200
+
 parrot-tools (4.11.3) rolling; urgency=medium
 
   [ Lorenzo "Palinuro" Faletra ]

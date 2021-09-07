@@ -238,7 +238,6 @@ Recommends:
   instaloader,
   inspy,
   sherlock,
-  certgraph,
   nmapsi4,
 Section: metapackages
 Priority: optional

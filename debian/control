@@ -14,7 +14,7 @@ Homepage: https://www.parrotsec.org/
 Package: parrot-crypto
 Architecture: all
 Depends: zulucrypt, sirikali, encryptpad
-Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs
+Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs, electrum
 Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
@@ -252,6 +252,7 @@ Architecture: all
 Recommends:
   afl,
   doona,
+  chkrootkit,
   thc-ipv6,
   dhcpig,
   enumiax,

@@ -589,8 +589,6 @@ Package: parrot-tools-report
 Architecture: all
 Recommends:
   eyewitness,
-  faraday-cli,
-  faraday,
 Section: metapackages
 Priority: optional
 Description: Pentest tool list for reporting

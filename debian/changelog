@@ -1,3 +1,11 @@
+parrot-tools (5.0.0) lts-updates; urgency=medium
+
+  * Update Devel metapackages.
+  * Use codium instead of vscodium.
+  * Drop code/vscode metapackages.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 06 Jan 2022 18:13:13 +0100
+
 parrot-tools (4.11.5) rolling; urgency=medium
 
   * Use new faraday-cli instead of faraday-client.

@@ -59,7 +59,7 @@ Description: Parrot Privacy Protection Tools
 Package: parrot-devel
 Architecture: all
 Depends: geany
-Recommends: parrot-devel-tools, geany, codium | vscodium, zeal, git-cola, meld, dbeaver, git, sqlitebrowser, firmware-mod-kit
+Recommends: parrot-devel-tools, geany, codium, zeal, git-cola, meld, dbeaver, git, sqlitebrowser, firmware-mod-kit
 Suggests: parrot-devel-extra
 Section: metapackages
 Priority: optional
@@ -159,34 +159,6 @@ Section: metapackages
 Priority: optional
 Homepage: https://www.vscodium.com
 Description: Free/Libre Open Source Software Binaries of VSCode
- Transitional package. Moved to codium.
- .
- This metapackage provides the compilers, interpreters and tools
- for various programming languages.
-
-Package: vscode
-Architecture: all
-Depends: codium
-Replaces: vscodium (< 1.35)
-Breaks: vscodium (< 1.35)
-Section: metapackages
-Priority: optional
-Homepage: https://www.vscodium.com
-Description: Free/Libre Open Source Software Binaries of VSCode (VSCodium)
- Transitional package. Moved to codium.
- .
- This metapackage provides the compilers, interpreters and tools
- for various programming languages.
-
-Package: code
-Architecture: all
-Depends: codium
-Replaces: vscodium (< 1.35)
-Breaks: vscodium (< 1.35)
-Section: metapackages
-Priority: optional
-Homepage: https://www.vscodium.com
-Description: Free/Libre Open Source Software Binaries of VSCode (VSCodium)
  Transitional package. Moved to codium.
  .
  This metapackage provides the compilers, interpreters and tools

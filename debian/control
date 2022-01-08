@@ -11,10 +11,10 @@ Build-Depends-Indep: pkg-config
 Homepage: https://www.parrotsec.org/
 
 
-Package: parrot-crypto
+Package: parrot-meta-crypto
 Architecture: all
-Depends: zulucrypt, sirikali, encryptpad
-Recommends: gpa, gocryptfs, encfs, cryptkeeper, cryfs
+Depends: zulucrypt-cli, zulucrypt-gui, zulumount-gui, zulupolkit
+Recommends: gpa, sirikali, gocryptfs, cryfs, encryptpad
 Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
@@ -26,24 +26,10 @@ Description: Parrot Encryption Tools
  This metapackage provides the cryptographic tools.
 
 
-Package: parrot-zsh
-Architecture: all
-Depends: zsh
-Recommends: zsh-autocomplete, zsh-syntax-highlighting, zsh-autosuggestions
-Section: metapackages
-Priority: optional
-Homepage: https://www.parrotsec.org
-Description: Parrot ZSH configuration
- This is Parrot Security,
- a security focused GNU/Linux distribution.
- .
- This metapackage provides the default plugin for Parrot ZSH shell.
-
-
-Package: parrot-privacy
+Package: parrot-meta-privacy
 Architecture: any
 Depends: anonsurf, tor, torbrowser-launcher
-Recommends: ricochet-im, nyx, mat2, anonsurf-gtk, anonsurf-cli, onionshare
+Recommends: nyx, mat2, anonsurf-gtk, anonsurf-cli, onionshare
 Suggests: parrot-crypto, onioncircuits
 Provides: parrot-anon
 Section: metapackages
@@ -56,11 +42,11 @@ Description: Parrot Privacy Protection Tools
  This metapackage provides the privacy protection tools.
 
 
-Package: parrot-devel
+Package: parrot-meta-devel
 Architecture: all
 Depends: geany
-Recommends: parrot-devel-tools, geany, codium, zeal, git-cola, meld, dbeaver, git, sqlitebrowser, firmware-mod-kit
-Suggests: parrot-devel-extra
+Recommends: parrot-meta-devel-tools, geany, codium, git-cola, meld, dbeaver, git, sqlitebrowser
+Suggests: parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -71,11 +57,11 @@ Description: Parrot Development Tools (IDEs & utilities)
  This metapackage provides the development environments for
  various programming languages.
 
-Package: parrot-devel-tools
+Package: parrot-meta-devel-tools
 Architecture: all
-Depends: gcc, g++, python3, ruby, powershell
-Recommends: default-jdk, cargo, valac, php-cli, golang
-Suggests: parrot-devel-extra
+Depends: gcc, g++, python3
+Recommends: default-jdk, cargo, valac, php-cli, golang, ruby, powershell
+Suggests: parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -86,10 +72,10 @@ Description: Parrot Development tools (compilers & tools)
  This metapackage provides the compilers, interpreters and tools
  for various programming languages.
 
-Package: parrot-devel-extra
+Package: parrot-meta-devel-extra
 Architecture: all
-Depends: parrot-devel-tools
-Recommends: parrot-devel-node, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, cmake, valgrind, devscripts, build-essential
+Depends: parrot-meta-devel-tools
+Recommends: parrot-meta-devel-node, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, cmake, valgrind, devscripts, build-essential
 Suggests: gdb, clang
 Section: metapackages
 Priority: optional
@@ -101,7 +87,7 @@ Description: Parrot Development tools (extra tools)
  This metapackage provides the compilers, interpreters and tools
  for various programming languages.
 
-Package: parrot-devel-node
+Package: parrot-meta-devel-node
 Architecture: all
 Depends: nodejs, npm
 Suggests: chromium
@@ -111,9 +97,9 @@ Homepage: https://www.parrotsec.org
 Description: Parrot Development kit for NodeJS
  This metapackage provides a ready to use set of tools to work with nodejs.
 
-Package: parrot-devel-dotnet
+Package: parrot-meta-devel-dotnet
 Architecture: all
-Depends: mono-devel, mono-runtime
+Depends: mono-devel, mono-runtime, powershell
 Recommends: mono-complete, mono-tools
 Section: metapackages
 Priority: optional
@@ -121,7 +107,7 @@ Homepage: https://www.parrotsec.org
 Description: Parrot Development kit for .NET/MONO
  This metapackage provides a ready to use set of tools to work with Microsoft .NET and MONO.
 
-Package: parrot-devel-nim
+Package: parrot-meta-devel-nim
 Architecture: all
 Depends: nim
 Recommends: libnim-gintro-dev
@@ -131,7 +117,7 @@ Homepage: https://www.parrotsec.org
 Description: Parrot Development kit for Nim lang
  This metapackage provides a ready to use set of tools to work with the NIM programming language.
 
-Package: parrot-devel-golang
+Package: parrot-meta-devel-golang
 Architecture: all
 Depends: golang-go
 Recommends: golang, golang-src, golang-doc,
@@ -165,7 +151,7 @@ Description: Free/Libre Open Source Software Binaries of VSCode
  for various programming languages.
 
 
-Package: parrot-tools-info
+Package: parrot-tools-infogathering
 Architecture: all
 Recommends:
   arp-scan,
@@ -213,7 +199,7 @@ Recommends:
   nmapsi4,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for information gathering
+Description: Pentest tools for information gathering
   Reconnaissance against a target to gather as much information
   as possible to be utilized when penetrating the target during
   the vulnerability assessment and exploitation phases.
@@ -223,7 +209,6 @@ Architecture: all
 Recommends:
   afl,
   doona,
-  thc-ipv6,
   dhcpig,
   enumiax,
   gvm,
@@ -251,7 +236,7 @@ Recommends:
   copy-router-config,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for vulnerability analysis
+Description: Pentest tools for vulnerability analysis
   Discovering flaws in systems and applications which can be
   leveraged by an attacker. These flaws can range anywhere
   from host and service misconfiguration, or insecure
@@ -281,7 +266,7 @@ Recommends:
   parsero,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for web analysis
+Description: Pentest tools for web analysis
   Discovering information and flaws in web applications
   layer.
 
@@ -305,9 +290,13 @@ Recommends:
   websploit,
   unicorn-magic,
   backdoor-factory,
+  kerberoast,
+  mimikatz,
+  powershell,
+  powershell-empire,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for exploitation
+Description: Pentest tools for exploitation
   Establishing access to a system or resource
   by bypassing security restrictions.
 
@@ -334,10 +323,13 @@ Recommends:
   webacoo,
   weevely,
   windows-binaries,
+  backdoor-factory,
   webshells,
+  powershell,
+  powershell-empire,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for maintaining access
+Description: Pentest tools for maintaining access
   A collection of tools used for maintaining access once
   a connection has been established.
 
@@ -353,7 +345,7 @@ Recommends:
   linux-exploit-suggester
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for post exploitation
+Description: Pentest tools for post exploitation
   Determine the value of the machine compromised and
   to maintain control of the machine for later use.
 
@@ -396,7 +388,7 @@ Recommends:
   statsprocessor,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for password attack
+Description: Pentest tools for password attack
   A collection of tools used for password attacks such as
   creating wordlists, brute force.
 
@@ -437,7 +429,7 @@ Recommends:
   yersinia,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for wireless exploitation
+Description: Pentest tools for wireless exploitation
   A collection of tools used for wireless audits, attacks and exploits.
 
 
@@ -471,12 +463,12 @@ Recommends:
   yersinia,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for network sniffing
+Description: Pentest tools for network sniffing
   A collection of tools used for monitoring and sniffing
   the data flowing over computer networks. 
 
 
-Package: parrot-tools-forensic
+Package: parrot-tools-forensics
 Architecture: all
 Recommends:
   afflib-tools,
@@ -515,6 +507,7 @@ Recommends:
   scrounge-ntfs,
   vinetto,
   xplico,
+  rsync,
   inetsim,
   forensic-artifacts,
   galleta,
@@ -524,7 +517,7 @@ Recommends:
   yara,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for forensics
+Description: Pentest tools for forensics
   A Collection of tools used for identification, collection,
   preservation, acquisition, investigation, analysis and reporting
   of digital devices and data.
@@ -534,9 +527,13 @@ Architecture: all
 Recommends: can-utils,
   parrot-meta-sdr,
   gscanbus,
+  can-utils,
+  scantool,
+  ow-tools,
+  ow-shell,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for vehicle hacking
+Description: Pentest tools for vehicle hacking
   A collection of tools for testing and exploiting
   vulnerabilities in car-hacking/automotive. 
 
@@ -547,23 +544,25 @@ Recommends:
   dex2jar,
   edb-debugger,
   gdb,
+  ghidra,
   javasnoop,
   rizin,
   rizin-cutter,
   smali,
+  firmware-mod-kit
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for reverse engineering
+Description: Pentest tools for reverse engineering
   A collection of tools used for reverse engineering
   software and binaries
 
-Package: parrot-tools-report
+Package: parrot-tools-reporting
 Architecture: all
 Recommends:
   eyewitness,
 Section: metapackages
 Priority: optional
-Description: Pentest tool list for reporting
+Description: Pentest tools for reporting
   A collection of tools used for gathering data and reports
   when performing pentests.
 
@@ -571,7 +570,7 @@ Package: parrot-tools-full
 Architecture: any
 Depends: parrot-tools
 Recommends: parrot-tools,
-  parrot-tools-info,
+  parrot-tools-infogathering,
   parrot-tools-vuln,
   parrot-tools-web,
   parrot-tools-pwn,
@@ -580,11 +579,12 @@ Recommends: parrot-tools,
   parrot-tools-password,
   parrot-tools-wireless,
   parrot-tools-sniff,
-  parrot-tools-forensic,
+  parrot-tools-forensics,
   parrot-tools-automotive,
   parrot-tools-reversing,
-  parrot-tools-report,
-  parrot-crypto,
+  parrot-tools-reporting,
+  parrot-tools-cloud
+  parrot-meta-crypto,
   vokoscreen,
   impacket-scripts,
   ngrep,
@@ -594,7 +594,7 @@ Recommends: parrot-tools,
   vlan,
 Section: metapackages
 Priority: optional
-Description: Metapackage that installs a FULL penetration testing environment
+Description: Metapackage that installs a full penetration testing environment
  This is Parrot Security OS,
  a security focused GNU/Linux distribution.
  .
@@ -604,7 +604,6 @@ Description: Metapackage that installs a FULL penetration testing environment
 Package: parrot-tools-cloud
 Architecture: any
 Recommends: aircrack-ng,
- nginx,
  arping,
  crunch,
  davtest,
@@ -657,7 +656,6 @@ Recommends: aircrack-ng,
  pwnat,
  crackmapexec,
  rainbowcrack,
- reaver,
  sbd,
  set,
  sfuzz,
@@ -694,148 +692,19 @@ Recommends: aircrack-ng,
  xsser,
  yersinia,
  beef-xss [amd64 i386],
- saidar,
- hexinject
-Section: metapackages
-Priority: optional
-Description: Parrot Security OS - cloud edition tools metapackage
- This is Parrot Security OS,
- a security focused GNU/Linux distribution.
- .
- This metapackage provides all the headless tools that can be useful on a
- remotely controlled cloud environment.
-
-
-Package: parrot-tools-common
-Architecture: any
-Recommends: aircrack-ng,
- arping,
- asleap,
- doona,
- bully,
- chntpw,
- cowpatty,
- creddump7,
- crunch,
- cymothoa,
- davtest,
- dc3dd,
- dcfldd,
- ddrescue,
- dhcpig,
- dirb,
- dirbuster,
- dmitry,
- dns2tcp,
- dnschef,
- dnsenum,
- dnsrecon,
- dnstracer,
- dnswalk,
- dos2unix,
- dsniff,
- eapmd5pass,
- enumiax,
- ethtool,
- ettercap-graphical,
- fcrackzip,
- ferret,
- fierce,
- foremost,
- fping,
  hexinject,
- hping3,
- htshells,
- iaxflood,
- impacket-scripts,
- iodine,
- isr-evilgrade,
- john,
- joomscan,
- laudanum,
- libnet1-dev,
- libpcap-dev,
- links,
- lynis,
- maskprocessor,
- mdk3,
- medusa,
- miredo,
- mitmproxy,
- nasm,
- nbtscan,
- netdiscover,
- nishang,
- nmap,
- openssh-server,
- oscanner,
- outguess,
- p0f,
- payloadsallthethings,
- powercat,
- powersploit,
- proxychains,
- proxytunnel,
- ptunnel,
- pwnat,
- reaver,
- reglookup,
- rig,
- safecopy,
- sbd,
- scalpel,
- sfuzz,
- shellinabox,
- siege,
- sipcrack,
- sipvicious,
- skipfish,
- smbmap,
- smbclient,
- smtp-user-enum,
- snmpcheck,
- socat,
- spiderfoot,
- sqldict,
- sqlmap,
- ssldump,
- sslscan,
- sslsniff,
- steghide,
- t50,
- tcpxtract,
- tcpick,
- tlssled,
- tcptrace,
- thc-ipv6,
- thc-ssl-dos,
- theharvester,
- themole,
- traceroute,
- whois,
- udptunnel,
- unix-privesc-check,
- wce,
- webacoo,
- webshells,
- websploit,
- weevely,
- whatweb,
- wireshark,
- etherwake,
- wpscan,
- xprobe,
- xsser,
- yersinia,
- zaproxy,
- zulucrypt,
- ftester,
- smali,
- geany,
- soundmodem,
- minimodem
+ cloud-enum,
+ azure-cli,
+ godoh,
+ s3scanner,
+ s3backer,
+ node-aws4,
+ awscli,
+ cloudbrute,
+ rsync,
+ rclone
 Section: metapackages
 Priority: optional
-Description: Tools selection for Parrot Mini
- This is Parrot Security OS,
- a security focused GNU/Linux distribution.
+Description: Pentest tools for cloud environments
+ A collection of headless tools that can be useful in
+ a remotely controlled cloud environment.

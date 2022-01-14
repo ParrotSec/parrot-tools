@@ -578,7 +578,6 @@ Description: Pentest tools for reporting
 
 Package: parrot-tools-full
 Architecture: any
-Depends: parrot-tools
 Recommends: parrot-tools,
   parrot-tools-infogathering,
   parrot-tools-vuln,

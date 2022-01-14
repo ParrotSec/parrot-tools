@@ -1,4 +1,10 @@
-parrot-tools (5.0.3) parrot-tools; urgency=medium
+parrot-tools (5.0.4) parrot-updates; urgency=medium
+
+  * Remove parrot-tools dependency from parrot-tools-all.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 13:58:46 +0100
+
+parrot-tools (5.0.3) parrot-updates; urgency=medium
 
   * Improve devel metapackages.
   * Remove parrot-meta-devel-tools dependency from parrot-meta-devel.

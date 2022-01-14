@@ -1,3 +1,17 @@
+parrot-tools (5.0.3) parrot-tools; urgency=medium
+
+  * Improve devel metapackages.
+  * Remove parrot-meta-devel-tools dependency from parrot-meta-devel.
+  * Add parrot-meta-devel-python.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Jan 2022 02:56:07 +0100
+
+parrot-tools (5.0.2) lts-updates; urgency=medium
+
+  * Fix missing comma.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 12 Jan 2022 15:16:26 +0100
+
 parrot-tools (5.0.1) lts-updates; urgency=medium
 
   * Update package names.

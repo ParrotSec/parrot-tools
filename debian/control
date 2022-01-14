@@ -45,8 +45,8 @@ Description: Parrot Privacy Protection Tools
 Package: parrot-meta-devel
 Architecture: all
 Depends: geany
-Recommends: parrot-meta-devel-tools, geany, codium, git-cola, meld, dbeaver, git, sqlitebrowser
-Suggests: parrot-meta-devel-extra
+Recommends: codium, powershell, git, python3, python3-pip, neovim
+Suggests: parrot-meta-devel-tools, parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -59,8 +59,8 @@ Description: Parrot Development Tools (IDEs & utilities)
 
 Package: parrot-meta-devel-tools
 Architecture: all
-Depends: gcc, g++, python3
-Recommends: default-jdk, cargo, valac, php-cli, golang, ruby, powershell
+Depends: gcc, g++, python3, python3-pip
+Recommends: default-jdk, cargo, valac, php-cli, golang, nodejs, npm, ruby, git-cola, meld, dbeaver, sqlitebrowser
 Suggests: parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
@@ -86,6 +86,16 @@ Description: Parrot Development tools (extra tools)
  .
  This metapackage provides the compilers, interpreters and tools
  for various programming languages.
+
+Package: parrot-meta-devel-python
+Architecture: all
+Depends: python3, python3-pip
+Recommends: cython3, python3-virtualenv, python3-aiohttp, python3-requests, python3-matplotlib, python3-keras, python3-opencv, python3-django, python3-flask
+Section: metapackages
+Priority: optional
+Homepage: https://www.parrotsec.org
+Description: Parrot Development kit for Python
+ This metapackage provides a ready to use set of tools to work with python.
 
 Package: parrot-meta-devel-node
 Architecture: all
@@ -583,7 +593,7 @@ Recommends: parrot-tools,
   parrot-tools-automotive,
   parrot-tools-reversing,
   parrot-tools-reporting,
-  parrot-tools-cloud
+  parrot-tools-cloud,
   parrot-meta-crypto,
   vokoscreen,
   impacket-scripts,

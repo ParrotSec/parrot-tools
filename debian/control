@@ -45,7 +45,7 @@ Description: Parrot Privacy Protection Tools
 Package: parrot-meta-devel
 Architecture: all
 Depends: geany
-Recommends: codium, powershell, git, python3, python3-pip, neovim
+Recommends: codium, git, python3, python3-pip, python3-venv, neovim
 Suggests: parrot-meta-devel-tools, parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
@@ -60,7 +60,7 @@ Description: Parrot Development Tools (IDEs & utilities)
 Package: parrot-meta-devel-tools
 Architecture: all
 Depends: gcc, g++, python3, python3-pip
-Recommends: default-jdk, cargo, valac, php-cli, golang, nodejs, npm, ruby, git-cola, meld, dbeaver, sqlitebrowser
+Recommends: default-jdk, cargo, php-cli, golang, nodejs, npm, ruby, git-cola, meld, dbeaver, sqlitebrowser
 Suggests: parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
@@ -75,7 +75,7 @@ Description: Parrot Development tools (compilers & tools)
 Package: parrot-meta-devel-extra
 Architecture: all
 Depends: parrot-meta-devel-tools
-Recommends: parrot-meta-devel-node, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, cmake, valgrind, devscripts, build-essential
+Recommends: parrot-meta-devel-node, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, cmake, valgrind, devscripts, build-essential  
 Suggests: gdb, clang
 Section: metapackages
 Priority: optional

@@ -1,3 +1,10 @@
+parrot-tools (5.0.5) parrot-updates; urgency=medium
+
+  * Remove powershell from parrot-meta-devel.
+  * Add python3-venv to parrot-meta-devel.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 02 Feb 2022 19:43:31 +0100
+
 parrot-tools (5.0.4) parrot-updates; urgency=medium
 
   * Remove parrot-tools dependency from parrot-tools-all.

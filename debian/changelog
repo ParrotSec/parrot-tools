@@ -1,9 +1,15 @@
+parrot-tools (5.0.6) parrot-updates; urgency=medium
+
+  * Rebuild package
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Apr 2023 19:06:44 +0200
+
 parrot-tools (5.0.5) parrot-updates; urgency=medium
 
   * Remove powershell from parrot-meta-devel.
   * Add python3-venv to parrot-meta-devel.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 02 Feb 2022 19:43:31 +0100
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 14 Apr 2023 19:05:43 +0200
 
 parrot-tools (5.0.4) parrot-updates; urgency=medium
 

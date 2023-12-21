@@ -1,3 +1,9 @@
+parrot-tools (6.0.0) lory; urgency=medium
+
+  * Add missing sql hacking tools.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 21 Dec 2023 16:26:09 +0100
+
 parrot-tools (5.0.6) parrot-updates; urgency=medium
 
   * Rebuild package

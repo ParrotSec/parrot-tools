@@ -306,8 +306,10 @@ Recommends:
   backdoor-factory,
   kerberoast,
   mimikatz,
+  netexec,
   powershell,
   powershell-empire,
+  evil-winrm,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for exploitation
@@ -341,6 +343,7 @@ Recommends:
   webshells,
   powershell,
   powershell-empire,
+  evil-winrm,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for maintaining access
@@ -668,6 +671,7 @@ Recommends: aircrack-ng,
  ptunnel,
  pwnat,
  crackmapexec,
+ netexec,
  rainbowcrack,
  sbd,
  set,
@@ -719,6 +723,8 @@ Recommends: aircrack-ng,
  awscli,
  cloudbrute,
  rsync,
+ netexec,
+ evil-winrm,
  rclone
 Section: metapackages
 Priority: optional

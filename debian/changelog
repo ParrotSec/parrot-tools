@@ -1,3 +1,9 @@
+parrot-tools (6.0.1) lory-updates; urgency=medium
+
+  * Add netexec and evil-winrm.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 01 Jun 2024 00:02:14 +0200
+
 parrot-tools (6.0.0) lory; urgency=medium
 
   * Add missing sql hacking tools.

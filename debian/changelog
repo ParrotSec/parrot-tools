@@ -1,3 +1,9 @@
+parrot-tools (6.2.0) lory; urgency=medium
+
+  * add smbclient to parrot-tools-infogathering
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 06 Aug 2024 18:23:46 +0200
+
 parrot-tools (6.0.1) lory-updates; urgency=medium
 
   * Add netexec and evil-winrm.

@@ -190,6 +190,7 @@ Recommends:
   onesixtyone,
   p0f,
   recon-ng,
+  smbclient,
   smbmap,
   smtp-user-enum,
   snmpcheck,

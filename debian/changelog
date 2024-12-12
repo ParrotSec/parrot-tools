@@ -1,3 +1,9 @@
+parrot-tools (6.3.0) lory-updates; urgency=medium
+
+  * Add caido and ffuf to pre-installed list.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 12 Dec 2024 10:43:25 +0100
+
 parrot-tools (6.2.0) lory; urgency=medium
 
   * add smbclient to parrot-tools-infogathering

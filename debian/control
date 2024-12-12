@@ -257,10 +257,12 @@ Package: parrot-tools-web
 Architecture: all
 Recommends:
   burpsuite,
+  caido,
   commix,
   davtest,
   dirb,
   dirbuster,
+  ffuf,
   gobuster,
   joomscan,
   jsql-injection,

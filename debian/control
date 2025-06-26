@@ -59,8 +59,8 @@ Description: Parrot Development Tools (IDEs & utilities)
 
 Package: parrot-meta-devel-tools
 Architecture: all
-Depends: gcc, g++, python3, python3-pip
-Recommends: default-jdk, cargo, php-cli, golang, nodejs, npm, ruby, git-cola, meld, dbeaver, sqlitebrowser
+Depends: gcc, g++, python3, python3-pip, golang
+Recommends: default-jdk, cargo, php-cli, nodejs, npm, ruby, git-cola, meld, dbeaver, sqlitebrowser
 Suggests: parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
@@ -75,7 +75,7 @@ Description: Parrot Development tools (compilers & tools)
 Package: parrot-meta-devel-extra
 Architecture: all
 Depends: parrot-meta-devel-tools
-Recommends: parrot-meta-devel-node, mono-devel, mono-runtime, perl6, qtcreator, qtbase5-dev, qt5-default, qt5-qmake, cython3, edb-debugger, jad, flasm, nasm, cmake, valgrind, devscripts, build-essential  
+Recommends: parrot-meta-devel-node, mono-devel, mono-runtime, qtcreator, cython3, edb-debugger, jad, flasm, nasm, cmake, valgrind, devscripts, build-essential  
 Suggests: gdb, clang
 Section: metapackages
 Priority: optional
@@ -90,7 +90,7 @@ Description: Parrot Development tools (extra tools)
 Package: parrot-meta-devel-python
 Architecture: all
 Depends: python3, python3-pip
-Recommends: cython3, python3-virtualenv, python3-aiohttp, python3-requests, python3-matplotlib, python3-keras, python3-opencv, python3-django, python3-flask
+Recommends: cython3, python3-virtualenv, python3-aiohttp, python3-requests, python3-matplotlib, python3-keras, python3-opencv
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -129,17 +129,7 @@ Description: Parrot Development kit for Nim lang
 
 Package: parrot-meta-devel-golang
 Architecture: all
-Depends: golang-go
-Recommends: golang, golang-src, golang-doc,
-            golang-easyjson, golang-github-gin-gonic-gin-dev, golang-github-go-chef-chef-dev,
-            golang-github-go-errors-errors-dev, golang-github-go-kit-kit-dev, golang-github-go-ini-ini-dev,
-            golang-github-go-ldap-ldap-dev, golang-github-go-logfmt-logfmt-dev, golang-github-go-redis-redis-dev,
-            golang-github-gorhill-cronexpr-dev, golang-github-gorilla-context-dev, golang-github-gorilla-csrf-dev,
-            golang-github-boj-redistore-dev, golang-github-gorilla-handlers-dev, golang-github-gorilla-mux-dev,
-            golang-github-gorilla-pat-dev, golang-github-gorilla-rpc-dev, golang-github-gorilla-securecookie-dev,
-            golang-github-gorilla-sessions-dev, golang-github-gorilla-websocket-dev, golang-github-gotk3-gotk3-dev,
-            golang-golang-x-crypto-dev, golang-golang-x-image-dev, golang-golang-x-mod-dev, golang-golang-x-net-dev,
-            golang-golang-x-sys-dev, golang-golang-x-time-dev, golang-golang-x-tools-dev,
+Depends: golang
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -185,6 +175,7 @@ Recommends:
   maltego,
   masscan,
   nbtscan,
+  netcat-openbsd,
   netdiscover,
   nmap,
   onesixtyone,
@@ -264,6 +255,7 @@ Recommends:
   dirbuster,
   ffuf,
   gobuster,
+  gosh,
   joomscan,
   jsql-injection,
   nikto,
@@ -289,6 +281,7 @@ Recommends:
   armitage,
   beef-xss,
   commix,
+  convoc2,
   thc-ipv6,
   jsql-injection,
   king-phisher,
@@ -322,13 +315,20 @@ Description: Pentest tools for exploitation
 Package: parrot-tools-maintain
 Architecture: all
 Recommends:
-  ncat-w32,
-  powercat,
+  backdoor-factory,
+  convoc2,
+  dbd,
   dns2tcp,
+  evil-winrm,
   hyperion,
   iodine,
   laudanum,
+  ncat-w32,
+  netcat-openbsd,
   nishang,
+  powercat,
+  powershell,
+  powershell-empire,
   proxychains,
   proxytunnel,
   ptunnel,
@@ -340,13 +340,9 @@ Recommends:
   stunnel4,
   udptunnel,
   webacoo,
+  webshells,
   weevely,
   windows-binaries,
-  backdoor-factory,
-  webshells,
-  powershell,
-  powershell-empire,
-  evil-winrm,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for maintaining access

@@ -1,3 +1,9 @@
+parrot-tools (6.4.0) lory; urgency=medium
+
+  * Add netcat-openbsd, gosh, dbd and convoc2.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 26 Jun 2025 15:46:01 +0200
+
 parrot-tools (6.3.0) lory-updates; urgency=medium
 
   * Add caido and ffuf to pre-installed list.

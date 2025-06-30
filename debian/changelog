@@ -1,3 +1,9 @@
+parrot-tools (6.4.2) lory-updates; urgency=medium
+
+  * add rocket.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Mon, 30 Jun 2025 18:21:06 +0200
+
 parrot-tools (6.4.1) lory-updates; urgency=medium
 
   * Add sliver.

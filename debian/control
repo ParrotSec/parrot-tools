@@ -305,6 +305,7 @@ Recommends:
   netexec,
   powershell,
   powershell-empire,
+  starkiller,
   evil-winrm,
 Section: metapackages
 Priority: optional
@@ -329,12 +330,14 @@ Recommends:
   powercat,
   powershell,
   powershell-empire,
+  starkiller,
   proxychains,
   proxytunnel,
   ptunnel,
   pwnat,
   sbd,
   shellter,
+  sliver,
   socat,
   sslh,
   stunnel4,

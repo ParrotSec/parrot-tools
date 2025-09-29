@@ -4,7 +4,8 @@ Maintainer: Parrot Team <team@parrotsec.org>
 Uploaders:
   Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
   Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
-Standards-Version: 4.5.1
+  Dario "danterolle" Camonita <danterolle@parrotsec.org>
+Standards-Version: 4.7.2
 Section: metapackages
 Build-Depends: debhelper (>= 12)
 Build-Depends-Indep: pkg-config

@@ -738,3 +738,13 @@ Priority: optional
 Description: Pentest tools for cloud environments
  A collection of headless tools that can be useful in
  a remotely controlled cloud environment.
+Package: project-monalisa
+Version: 0.1.0
+Maintainer: Akash Sil <akashsil420@duck.com>
+Essential: no
+Section: metapackages
+Priority: optional
+Architecture: all
+Homepage: https://github.com/Akash420-oss/Project-Monalisa
+Depends: nmap,firefox-esr,python3,tcpdump,tshark,wireshark
+Description: "This project allows you to explore networking protocols by sending custom packets, monitoring traffic, and identifying services like SSH, FTP, and Telnet without using traditional commands or tools."

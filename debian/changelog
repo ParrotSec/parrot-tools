@@ -1,3 +1,11 @@
+parrot-tools (7.0.1) echo; urgency=medium
+
+  * Modernize package list.
+  * Add new AI tools category.
+  * Remove some deprecated tools.
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 11 Dec 2025 17:17:32 +0100
+
 parrot-tools (6.4.3) lory-updates; urgency=medium
 
   * Update package data.

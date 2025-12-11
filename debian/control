@@ -15,7 +15,7 @@ Homepage: https://www.parrotsec.org/
 Package: parrot-meta-crypto
 Architecture: all
 Depends: zulucrypt-cli, zulucrypt-gui, zulumount-gui, zulupolkit
-Recommends: gpa, sirikali, gocryptfs, cryfs, encryptpad
+Recommends: seahorse | gpa, sirikali, gocryptfs, cryfs, encryptpad
 Suggests: parrot-privacy
 Section: metapackages
 Priority: optional
@@ -61,7 +61,7 @@ Description: Parrot Development Tools (IDEs & utilities)
 Package: parrot-meta-devel-tools
 Architecture: all
 Depends: gcc, g++, python3, python3-pip, golang
-Recommends: default-jdk, cargo, php-cli, nodejs, npm, ruby, git-cola, meld, dbeaver, sqlitebrowser
+Recommends: default-jdk, cargo, git-cola, meld, dbeaver, sqlitebrowser, gdb cgdb
 Suggests: parrot-meta-devel-extra
 Section: metapackages
 Priority: optional
@@ -151,14 +151,25 @@ Description: Free/Libre Open Source Software Binaries of VSCode
  This metapackage provides the compilers, interpreters and tools
  for various programming languages.
 
+Package: parrot-tools-ai
+Architecture: all
+Recommends:
+  hexstrike-ai
+Section: metapackages
+Priority: optional
+Description: Pentest tools for AI
+ A collection of tools that leverage AI to perform security tests,
+ and tools to assess LLM and prompt security.
 
 Package: parrot-tools-infogathering
 Architecture: all
 Recommends:
-  arp-scan,
   0trace,
+  2ping,
+  arp-scan,
   amap,
   arping,
+  autorecon,
   braa,
   thc-ipv6,
   dmitry,
@@ -181,6 +192,7 @@ Recommends:
   nmap,
   onesixtyone,
   p0f,
+  patchleaks,
   recon-ng,
   rocket,
   smbclient,
@@ -258,7 +270,7 @@ Recommends:
   dirbuster,
   ffuf,
   gobuster,
-  gosh,
+  goshs,
   joomscan,
   jsql-injection,
   nikto,
@@ -284,6 +296,7 @@ Architecture: all
 Recommends:
   armitage,
   beef-xss,
+  bloodhound
   commix,
   convoc2,
   thc-ipv6,
@@ -322,6 +335,7 @@ Package: parrot-tools-maintain
 Architecture: all
 Recommends:
   backdoor-factory,
+  chisel,
   convoc2,
   dbd,
   dns2tcp,
@@ -364,6 +378,7 @@ Recommends:
   mimikatz,
   powersploit,
   passing-the-hash,
+  peass,
   wce,
   xspy,
   lynis,
@@ -533,7 +548,6 @@ Recommends:
   vinetto,
   xplico,
   rsync,
-  inetsim,
   forensic-artifacts,
   galleta,
   gpp-decrypt,
@@ -565,6 +579,7 @@ Description: Pentest tools for vehicle hacking
 Package: parrot-tools-reversing
 Architecture: all
 Recommends:
+  bpf-linker,
   clang,
   dex2jar,
   edb-debugger,
@@ -608,12 +623,11 @@ Recommends: parrot-tools,
   parrot-tools-reversing,
   parrot-tools-reporting,
   parrot-tools-cloud,
+  parrot-tools-ai,
   parrot-meta-crypto,
-  vokoscreen,
   impacket-scripts,
   ngrep,
   netsed,
-  osslsigncode,
   arpwatch,
   vlan,
 Section: metapackages
@@ -627,12 +641,10 @@ Description: Metapackage that installs a full penetration testing environment
 
 Package: parrot-tools-cloud
 Architecture: any
-Recommends: aircrack-ng,
+Recommends:
+  syft,
  arping,
- crunch,
  davtest,
- dc3dd,
- dhcpig,
  dirb,
  dirbuster,
  dmitry,
@@ -640,88 +652,41 @@ Recommends: aircrack-ng,
  dnschef,
  dnsenum,
  dnsmap,
- dos2unix,
- eapmd5pass,
- enumiax,
- ethtool,
- fcrackzip,
  fping,
- hashcat,
  hping3,
- iaxflood,
- impacket-scripts,
  iodine,
  isr-evilgrade,
- john,
  joomscan,
- laudanum,
- links,
- lynis,
  maskprocessor,
  medusa,
  metasploit-framework,
- miredo,
- miredo-server,
- mitmproxy,
- nasm,
- nbtscan,
  ncrack,
  netdiscover,
  nikto,
  nmap,
- openssh-server,
- ophcrack-cli,
- oscanner,
  p0f,
- powersploit,
- proxychains,
- proxytunnel,
- ptunnel,
- pwnat,
- crackmapexec,
  netexec,
- rainbowcrack,
  sbd,
- set,
  sfuzz,
  siege,
  skipfish,
- smbclient,
- smbmap,
- smtp-user-enum,
- snmpcheck,
  socat,
- spiderfoot,
- sqldict,
  sqlmap,
  sqlninja,
  sqlsus,
  websploit,
- ssldump,
- sslscan,
- sslsniff,
  tcpdump,
  t50,
  thc-ipv6,
  thc-ssl-dos,
- theharvester,
  traceroute,
+ trufflehog,
  whois,
- truecrack,
- udptunnel,
- unix-privesc-check,
- webacoo,
  webshells,
  websploit,
  weevely,
  whatweb,
  etherwake,
- wpscan,
- xprobe,
- xsser,
- yersinia,
- beef-xss [amd64 i386],
- hexinject,
  cloud-enum,
  azure-cli,
  godoh,
@@ -731,11 +696,8 @@ Recommends: aircrack-ng,
  awscli,
  cloudbrute,
  rsync,
- netexec,
- evil-winrm,
  rclone
 Section: metapackages
 Priority: optional
-Description: Pentest tools for cloud environments
- A collection of headless tools that can be useful in
- a remotely controlled cloud environment.
+Description: Pentest tools for cloud
+ A collection of tools to test cloud technologies.

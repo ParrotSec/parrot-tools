@@ -296,7 +296,7 @@ Architecture: all
 Recommends:
   armitage,
   beef-xss,
-  bloodhound
+  bloodhound,
   commix,
   convoc2,
   thc-ipv6,

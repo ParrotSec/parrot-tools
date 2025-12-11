@@ -1,6 +1,7 @@
-parrot-tools (7.0.2) UNRELEASED; urgency=medium
+parrot-tools (7.1.0) echo; urgency=medium
 
   * typo
+  * include logseq
 
  -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Thu, 11 Dec 2025 17:28:17 +0100
 

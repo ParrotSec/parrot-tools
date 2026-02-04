@@ -600,6 +600,7 @@ Package: parrot-tools-reporting
 Architecture: all
 Recommends:
   eyewitness,
+  logseq,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for reporting

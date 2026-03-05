@@ -2,21 +2,32 @@ Source: parrot-tools
 Priority: optional
 Maintainer: Parrot Team <team@parrotsec.org>
 Uploaders:
-  Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+ Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
   Nong Hoang "Dmknght" Tu <dmknght@parrotsec.org>
-  Dario "danterolle" Camonita <danterolle@parrotsec.org>
+  Dario "danterolle" Camonita <danterolle@parrotsec.org>,
 Standards-Version: 4.7.2
 Section: metapackages
-Build-Depends: debhelper (>= 12)
-Build-Depends-Indep: pkg-config
+Build-Depends:
+ debhelper (>= 12),
+Build-Depends-Indep:
+ pkg-config,
 Homepage: https://www.parrotsec.org/
-
 
 Package: parrot-meta-crypto
 Architecture: all
-Depends: zulucrypt-cli, zulucrypt-gui, zulumount-gui, zulupolkit
-Recommends: seahorse | gpa, sirikali, gocryptfs, cryfs, encryptpad
-Suggests: parrot-privacy
+Depends:
+ zulucrypt-cli [!i386],
+ zulucrypt-gui [!i386],
+ zulumount-gui [!i386],
+ zulupolkit [!i386],
+Recommends:
+ cryfs [!i386],
+ encryptpad [!i386 !riscv64],
+ gocryptfs [!i386],
+ seahorse [!i386] | gpa,
+ sirikali [!i386],
+Suggests:
+ parrot-privacy,
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -26,13 +37,23 @@ Description: Parrot Encryption Tools
  .
  This metapackage provides the cryptographic tools.
 
-
 Package: parrot-meta-privacy
 Architecture: any
-Depends: anonsurf, tor, torbrowser-launcher
-Recommends: nyx, mat2, anonsurf-gtk, anonsurf-cli, onionshare
-Suggests: parrot-crypto, onioncircuits
-Provides: parrot-anon
+Depends:
+ anonsurf [!i386 !riscv64],
+ tor [!i386],
+ torbrowser-launcher [amd64],
+Recommends:
+ anonsurf-cli [!i386 !riscv64],
+ anonsurf-gtk [!i386 !riscv64],
+ mat2,
+ nyx,
+ onionshare,
+Suggests:
+ onioncircuits,
+ parrot-crypto,
+Provides:
+ parrot-anon,
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -42,12 +63,20 @@ Description: Parrot Privacy Protection Tools
  .
  This metapackage provides the privacy protection tools.
 
-
 Package: parrot-meta-devel
 Architecture: all
-Depends: geany
-Recommends: codium, git, python3, python3-pip, python3-venv, neovim
-Suggests: parrot-meta-devel-tools, parrot-meta-devel-extra
+Depends:
+ geany [!i386],
+Recommends:
+ codium [amd64 arm64],
+ git [!i386],
+ neovim [!i386],
+ python3 [!i386],
+ python3-pip,
+ python3-venv [!i386],
+Suggests:
+ parrot-meta-devel-extra,
+ parrot-meta-devel-tools,
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -60,9 +89,23 @@ Description: Parrot Development Tools (IDEs & utilities)
 
 Package: parrot-meta-devel-tools
 Architecture: all
-Depends: gcc, g++, python3, python3-pip, golang
-Recommends: default-jdk, cargo, git-cola, meld, dbeaver, sqlitebrowser, gdb, cgdb
-Suggests: parrot-meta-devel-extra
+Depends:
+ g++ [!i386],
+ gcc [!i386],
+ golang [!i386],
+ python3 [!i386],
+ python3-pip,
+Recommends:
+ cargo [!i386],
+ cgdb [!i386],
+ dbeaver [amd64 arm64],
+ default-jdk [!i386],
+ gdb [!i386],
+ git-cola,
+ meld,
+ sqlitebrowser [!i386],
+Suggests:
+ parrot-meta-devel-extra,
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -75,9 +118,25 @@ Description: Parrot Development tools (compilers & tools)
 
 Package: parrot-meta-devel-extra
 Architecture: all
-Depends: parrot-meta-devel-tools
-Recommends: parrot-meta-devel-node, mono-devel, mono-runtime, qtcreator, cython3, edb-debugger, jad, flasm, nasm, cmake, valgrind, devscripts, build-essential  
-Suggests: gdb, clang
+Depends:
+ parrot-meta-devel-tools,
+Recommends:
+ build-essential [!i386],
+ cmake [!i386],
+ cython3 [!i386],
+ devscripts,
+ edb-debugger [amd64],
+ flasm,
+ jad,
+ mono-devel,
+ mono-runtime [!i386 !riscv64],
+ nasm [!i386],
+ parrot-meta-devel-node,
+ qtcreator [!i386],
+ valgrind [!i386 !riscv64],
+Suggests:
+ clang [!i386],
+ gdb [!i386],
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -90,8 +149,17 @@ Description: Parrot Development tools (extra tools)
 
 Package: parrot-meta-devel-python
 Architecture: all
-Depends: python3, python3-pip
-Recommends: cython3, python3-virtualenv, python3-aiohttp, python3-requests, python3-matplotlib, python3-keras, python3-opencv
+Depends:
+ python3 [!i386],
+ python3-pip,
+Recommends:
+ cython3 [!i386],
+ python3-aiohttp [!i386],
+ python3-keras,
+ python3-matplotlib [!i386],
+ python3-opencv [!i386],
+ python3-requests,
+ python3-virtualenv,
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -100,8 +168,11 @@ Description: Parrot Development kit for Python
 
 Package: parrot-meta-devel-node
 Architecture: all
-Depends: nodejs, npm
-Suggests: chromium
+Depends:
+ nodejs [!i386],
+ npm,
+Suggests:
+ chromium,
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -110,8 +181,13 @@ Description: Parrot Development kit for NodeJS
 
 Package: parrot-meta-devel-dotnet
 Architecture: all
-Depends: mono-devel, mono-runtime, powershell
-Recommends: mono-complete, mono-tools
+Depends:
+ mono-devel,
+ mono-runtime [!i386 !riscv64],
+ powershell,
+Recommends:
+ mono-complete [!i386 !riscv64],
+ mono-tools,
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -120,8 +196,10 @@ Description: Parrot Development kit for .NET/MONO
 
 Package: parrot-meta-devel-nim
 Architecture: all
-Depends: nim
-Recommends: libnim-gintro-dev
+Depends:
+ nim,
+Recommends:
+ libnim-gintro-dev [!i386 !riscv64],
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
@@ -130,18 +208,22 @@ Description: Parrot Development kit for Nim lang
 
 Package: parrot-meta-devel-golang
 Architecture: all
-Depends: golang
+Depends:
+ golang [!i386],
 Section: metapackages
 Priority: optional
 Homepage: https://www.parrotsec.org
 Description: Parrot Development kit for Go (Golang)
  This metapackage provides a ready to use set of tools to work with the Go programming language (Golang).
-        
+
 Package: vscodium
 Architecture: all
-Depends: codium
-Replaces: vscodium (< 1.35)
-Breaks: vscodium (< 1.35)
+Depends:
+ codium [amd64 arm64],
+Replaces:
+ vscodium (< 1.35),
+Breaks:
+ vscodium (< 1.35),
 Section: metapackages
 Priority: optional
 Homepage: https://www.vscodium.com
@@ -154,7 +236,7 @@ Description: Free/Libre Open Source Software Binaries of VSCode
 Package: parrot-tools-ai
 Architecture: all
 Recommends:
-  hexstrike-ai
+ hexstrike-ai,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for AI
@@ -164,55 +246,55 @@ Description: Pentest tools for AI
 Package: parrot-tools-infogathering
 Architecture: all
 Recommends:
-  0trace,
-  2ping,
-  arp-scan,
-  amap,
-  arping,
-  autorecon,
-  braa,
-  thc-ipv6,
-  dmitry,
-  dnsenum,
-  dnsmap,
-  enum4linux,
-  etherape,
-  fping,
-  gobuster,
-  hping3,
-  ike-scan,
-  intrace,
-  irpas,
-  lbd,
-  maltego,
-  masscan,
-  nbtscan,
-  netcat-openbsd,
-  netdiscover,
-  nmap,
-  onesixtyone,
-  p0f,
-  patchleaks,
-  recon-ng,
-  rocket,
-  smbclient,
-  smbmap,
-  smtp-user-enum,
-  snmpcheck,
-  ssldump,
-  sslh,
-  sslscan,
-  sslyze,
-  swaks,
-  theharvester,
-  unicornscan,
-  ismtp,
-  python3-shodan,
-  emailharvester,
-  instaloader,
-  inspy,
-  sherlock,
-  nmapsi4,
+ 0trace [!i386],
+ 2ping,
+ amap [!i386 !riscv64],
+ arp-scan [!i386],
+ arping [!i386],
+ autorecon [!i386],
+ braa [!i386],
+ dmitry [!i386],
+ dnsenum,
+ dnsmap [!i386],
+ emailharvester,
+ enum4linux,
+ etherape [!i386],
+ fping [!i386],
+ gobuster [!i386],
+ hping3 [!i386],
+ ike-scan [!i386],
+ inspy,
+ instaloader,
+ intrace [!i386 !riscv64],
+ irpas [!i386],
+ ismtp,
+ lbd,
+ maltego,
+ masscan [!i386],
+ nbtscan [!i386],
+ netcat-openbsd [!i386],
+ netdiscover [!i386],
+ nmap [!i386],
+ nmapsi4 [!i386 !riscv64],
+ onesixtyone [!i386],
+ p0f [!i386],
+ patchleaks [!i386],
+ python3-shodan,
+ recon-ng,
+ rocket [amd64 arm64],
+ sherlock,
+ smbclient [!i386],
+ smbmap,
+ smtp-user-enum,
+ snmpcheck,
+ ssldump [!i386],
+ sslh [!i386],
+ sslscan [!i386],
+ sslyze,
+ swaks,
+ thc-ipv6 [!i386],
+ theharvester,
+ unicornscan [!i386 !riscv64],
 Section: metapackages
 Priority: optional
 Description: Pentest tools for information gathering
@@ -223,34 +305,34 @@ Description: Pentest tools for information gathering
 Package: parrot-tools-vuln
 Architecture: all
 Recommends:
-  afl,
-  doona,
-  dhcpig,
-  enumiax,
-  gvm,
-  iaxflood,
-  inviteflood,
-  dsniff,
-  ohrwurm,
-  protos-sip,
-  rocket,
-  rtpbreak,
-  rtpflood,
-  rtpinsertsound,
-  rtpmixsound,
-  sipp,
-  slowhttptest,
-  spike,
-  sipvicious,
-  thc-ssl-dos,
-  unix-privesc-check,
-  voiphopper,
-  yersinia,
-  siparmyknife,
-  sctpscan,
-  cisco-ocs,
-  cisco-torch,
-  copy-router-config,
+ afl,
+ cisco-ocs [!i386 !riscv64],
+ cisco-torch,
+ copy-router-config,
+ dhcpig,
+ doona,
+ dsniff [!i386],
+ enumiax [!i386 !riscv64],
+ gvm,
+ iaxflood [!i386 !riscv64],
+ inviteflood [!i386 !riscv64],
+ ohrwurm [!i386 !riscv64],
+ protos-sip,
+ rocket [amd64 arm64],
+ rtpbreak [!i386 !riscv64],
+ rtpflood [!i386 !riscv64],
+ rtpinsertsound [!i386 !riscv64],
+ rtpmixsound [!i386 !riscv64],
+ sctpscan [!i386 !riscv64],
+ siparmyknife,
+ sipp [!i386 !riscv64],
+ sipvicious,
+ slowhttptest [!i386],
+ spike [!i386 !riscv64],
+ thc-ssl-dos [!i386 !riscv64],
+ unix-privesc-check,
+ voiphopper [!i386 !riscv64],
+ yersinia,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for vulnerability analysis
@@ -262,29 +344,29 @@ Description: Pentest tools for vulnerability analysis
 Package: parrot-tools-web
 Architecture: all
 Recommends:
-  burpsuite,
-  caido,
-  commix,
-  davtest,
-  dirb,
-  dirbuster,
-  ffuf,
-  gobuster,
-  goshs,
-  joomscan,
-  jsql-injection,
-  nikto,
-  padbuster,
-  rocket,
-  skipfish,
-  wfuzz,
-  whatweb,
-  wig,
-  wpscan,
-  xsser,
-  zaproxy,
-  wafw00f,
-  parsero,
+ burpsuite,
+ caido [amd64 arm64],
+ commix,
+ davtest,
+ dirb [!i386],
+ dirbuster,
+ ffuf [!i386],
+ gobuster [!i386],
+ goshs [!i386],
+ joomscan,
+ jsql-injection,
+ nikto,
+ padbuster,
+ parsero,
+ rocket [amd64 arm64],
+ skipfish [!i386 !riscv64],
+ wafw00f,
+ wfuzz,
+ whatweb,
+ wig,
+ wpscan,
+ xsser,
+ zaproxy,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for web analysis
@@ -294,37 +376,37 @@ Description: Pentest tools for web analysis
 Package: parrot-tools-pwn
 Architecture: all
 Recommends:
-  armitage,
-  beef-xss,
-  bloodhound,
-  commix,
-  convoc2,
-  thc-ipv6,
-  jsql-injection,
-  king-phisher,
-  mdbtools,
-  metasploit-framework,
-  oscanner,
-  pompem,
-  rocket,
-  set,
-  shellnoob,
-  sidguesser,
-  sqldict,
-  sqlitebrowser,
-  sqlmap,
-  sqlninja,
-  sqlsus,
-  websploit,
-  unicorn-magic,
-  backdoor-factory,
-  kerberoast,
-  mimikatz,
-  netexec,
-  powershell,
-  powershell-empire,
-  starkiller,
-  evil-winrm,
+ armitage,
+ backdoor-factory,
+ beef-xss [!i386 !riscv64],
+ bloodhound [amd64 arm64],
+ commix,
+ convoc2 [!armhf !i386],
+ evil-winrm,
+ jsql-injection,
+ kerberoast,
+ king-phisher,
+ mdbtools [!i386],
+ metasploit-framework [!i386],
+ mimikatz,
+ netexec [amd64 arm64],
+ oscanner,
+ pompem,
+ powershell,
+ powershell-empire,
+ rocket [amd64 arm64],
+ set,
+ shellnoob [amd64 armhf],
+ sidguesser [!i386 !riscv64],
+ sqldict,
+ sqlitebrowser [!i386],
+ sqlmap,
+ sqlninja,
+ sqlsus,
+ starkiller,
+ thc-ipv6 [!i386],
+ unicorn-magic,
+ websploit,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for exploitation
@@ -334,38 +416,38 @@ Description: Pentest tools for exploitation
 Package: parrot-tools-maintain
 Architecture: all
 Recommends:
-  backdoor-factory,
-  chisel,
-  convoc2,
-  dbd,
-  dns2tcp,
-  evil-winrm,
-  hyperion,
-  iodine,
-  laudanum,
-  ncat-w32,
-  netcat-openbsd,
-  nishang,
-  powercat,
-  powershell,
-  powershell-empire,
-  rocket,
-  starkiller,
-  proxychains,
-  proxytunnel,
-  ptunnel,
-  pwnat,
-  sbd,
-  shellter,
-  sliver,
-  socat,
-  sslh,
-  stunnel4,
-  udptunnel,
-  webacoo,
-  webshells,
-  weevely,
-  windows-binaries,
+ backdoor-factory,
+ chisel [!i386 !riscv64],
+ convoc2 [!armhf !i386],
+ dbd [!i386 !riscv64],
+ dns2tcp [!i386],
+ evil-winrm,
+ hyperion,
+ iodine [!i386],
+ laudanum,
+ ncat-w32,
+ netcat-openbsd [!i386],
+ nishang,
+ powercat,
+ powershell,
+ powershell-empire,
+ proxychains,
+ proxytunnel [!i386],
+ ptunnel [!i386],
+ pwnat [!i386 !riscv64],
+ rocket [amd64 arm64],
+ sbd [!i386],
+ shellter [amd64],
+ sliver [amd64 arm64],
+ socat [!i386],
+ sslh [!i386],
+ starkiller,
+ stunnel4 [!i386],
+ udptunnel [!i386],
+ webacoo,
+ webshells,
+ weevely,
+ windows-binaries,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for maintaining access
@@ -375,14 +457,14 @@ Description: Pentest tools for maintaining access
 Package: parrot-tools-postexploit
 Architecture: all
 Recommends:
-  mimikatz,
-  powersploit,
-  passing-the-hash,
-  peass,
-  wce,
-  xspy,
-  lynis,
-  linux-exploit-suggester
+ linux-exploit-suggester,
+ lynis,
+ mimikatz,
+ passing-the-hash [!i386 !riscv64],
+ peass,
+ powersploit,
+ wce,
+ xspy [!i386 !riscv64],
 Section: metapackages
 Priority: optional
 Description: Pentest tools for post exploitation
@@ -392,168 +474,160 @@ Description: Pentest tools for post exploitation
 Package: parrot-tools-password
 Architecture: all
 Recommends:
-  brutespray,
-  cewl,
-  changeme,
-  chntpw,
-  cmospwd,
-  crackle,
-  crunch,
-  fcrackzip,
-  hashcat,
-  hashid,
-  hydra,
-  john,
-  johnny,
-  pack,
-  medusa,
-  onesixtyone,
-  ophcrack-cli,
-  ophcrack,
-  pdfcrack,
-  pipal,
-  pixiewps,
-  rainbowcrack,
-  rarcrack,
-  rcracki-mt,
-  rsmangler,
-  samdump2,
-  sipcrack,
-  sucrack,
-  thc-pptp-bruter,
-  truecrack,
-  twofi,
-  wordlists,
-  device-pharmer,
-  statsprocessor,
+ brutespray,
+ cewl,
+ changeme,
+ chntpw [!i386],
+ cmospwd [amd64],
+ crackle [!i386 !riscv64],
+ crunch [!i386],
+ device-pharmer,
+ fcrackzip [!i386],
+ hashcat [!i386 !riscv64],
+ hashid,
+ hydra [!i386],
+ john [!i386],
+ johnny [!i386 !riscv64],
+ medusa [!i386],
+ onesixtyone [!i386],
+ ophcrack [!i386],
+ ophcrack-cli [!i386],
+ pack,
+ pdfcrack [!i386],
+ pipal,
+ pixiewps [!i386],
+ rainbowcrack [amd64],
+ rarcrack [!i386],
+ rcracki-mt [!i386 !riscv64],
+ rsmangler,
+ samdump2 [!i386],
+ sipcrack [!i386],
+ statsprocessor [!i386],
+ sucrack [!i386],
+ thc-pptp-bruter [!i386 !riscv64],
+ truecrack [!i386 !riscv64],
+ twofi,
+ wordlists,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for password attack
   A collection of tools used for password attacks such as
   creating wordlists, brute force.
 
-
 Package: parrot-tools-wireless
 Architecture: all
 Recommends:
-  aircrack-ng,
-  airgeddon,
-  asleap,
-  bluelog,
-  blueranger,
-  bluesnarfer,
-  btscanner,
-  bluez-hcidump,
-  bully,
-  cowpatty,
-  crackle,
-  eapmd5pass,
-  fern-wifi-cracker,
-  hackrf,
-  inspectrum,
-  king-phisher,
-  mdk3,
-  mfcuk,
-  mfoc,
-  mfterm,
-  libfreefare-bin,
-  libnfc-bin,
-  pixiewps,
-  reaver,
-  redfang,
-  rfcat,
-  rtlsdr-scanner,
-  ubertooth,
-  wifi-honey,
-  wifite,
-  yersinia,
+ aircrack-ng [!i386],
+ airgeddon,
+ asleap [!i386 !riscv64],
+ bluelog,
+ blueranger,
+ bluesnarfer,
+ bluez-hcidump [!i386],
+ btscanner [!i386],
+ bully [!i386],
+ cowpatty [!i386],
+ crackle [!i386 !riscv64],
+ eapmd5pass [!i386 !riscv64],
+ fern-wifi-cracker,
+ hackrf [!i386],
+ inspectrum [!i386],
+ king-phisher,
+ libfreefare-bin [!i386],
+ libnfc-bin [!i386],
+ mdk3 [!i386],
+ mfcuk [!i386],
+ mfoc [!i386],
+ mfterm [!i386 !riscv64],
+ pixiewps [!i386],
+ reaver [!i386],
+ redfang [!i386 !riscv64],
+ rfcat [!i386 !riscv64],
+ rtlsdr-scanner,
+ ubertooth [!i386],
+ wifi-honey,
+ wifite,
+ yersinia,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for wireless exploitation
   A collection of tools used for wireless audits, attacks and exploits.
 
-
 Package: parrot-tools-sniff
 Architecture: all
 Recommends:
-  bettercap,
-  chaosreader,
-  darkstat,
-  dnschef,
-  dsniff,
-  sniffjoke,
-  tcpflow,
-  driftnet,
-  etherape,
-  ettercap-graphical,
-  thc-ipv6,
-  fiked,
-  hamster-sidejack,
-  hexinject,
-  isr-evilgrade,
-  mitmproxy,
-  netsniff-ng,
-  rebind,
-  responder,
-  sslsniff,
-  sslsplit,
-  tcpreplay,
-  wifi-honey,
-  wireshark,
-  yersinia,
+ bettercap [!i386],
+ chaosreader,
+ darkstat [!i386],
+ dnschef,
+ driftnet [!i386],
+ dsniff [!i386],
+ etherape [!i386],
+ ettercap-graphical [!i386],
+ fiked [!i386 !riscv64],
+ hamster-sidejack [!i386 !riscv64],
+ hexinject [!i386 !riscv64],
+ isr-evilgrade,
+ mitmproxy,
+ netsniff-ng [!i386],
+ rebind [!i386 !riscv64],
+ responder,
+ sniffjoke [!i386 !riscv64],
+ sslsniff [!i386],
+ sslsplit [!i386],
+ tcpflow [!i386],
+ tcpreplay [!i386],
+ thc-ipv6 [!i386],
+ wifi-honey,
+ wireshark [!i386],
+ yersinia,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for network sniffing
   A collection of tools used for monitoring and sniffing
-  the data flowing over computer networks. 
-
+  the data flowing over computer networks.
 
 Package: parrot-tools-forensics
 Architecture: all
 Recommends:
-  afflib-tools,
-  dumpzilla,
-  extundelete,
-  rifiuti,
-  ewf-tools,
-  cabextract,
-  autopsy,
-  binwalk,
-  sleuthkit,
-  dc3dd,
-  dcfldd,
-  ddrescue,
-  dex2jar,
-  ewf-tools,
-  extundelete,
-  foremost,
-  galleta,
-  gtkhash,
-  guymager,
-  hashdeep,
-  magicrescue,
-  missidentify,
-  pasco,
-  pdf-parser,
-  pdfid,
-  pev,
-  recoverjpeg,
-  reglookup,
-  regripper,
-  rifiuti,
-  rifiuti2,
-  safecopy,
-  scalpel,
-  scrounge-ntfs,
-  vinetto,
-  xplico,
-  rsync,
-  forensic-artifacts,
-  galleta,
-  gpp-decrypt,
-  guymager,
-  smartmontools,
-  yara,
+ afflib-tools [!i386],
+ autopsy,
+ binwalk,
+ cabextract [!i386],
+ dc3dd [!i386],
+ dcfldd [!i386],
+ ddrescue [amd64 arm64],
+ dex2jar,
+ dumpzilla,
+ ewf-tools [!i386],
+ extundelete [!i386],
+ foremost [!i386],
+ forensic-artifacts,
+ galleta [!i386],
+ gpp-decrypt,
+ gtkhash [!i386],
+ guymager [!i386 !riscv64],
+ hashdeep [!i386],
+ magicrescue [!i386],
+ missidentify [!i386],
+ pasco [!i386],
+ pdf-parser,
+ pdfid,
+ pev,
+ recoverjpeg [!i386],
+ reglookup [!i386],
+ regripper,
+ rifiuti [!i386],
+ rifiuti2 [!i386],
+ rsync [!i386],
+ safecopy [!i386],
+ scalpel [!i386],
+ scrounge-ntfs [!i386],
+ sleuthkit [!i386],
+ smartmontools [!i386],
+ vinetto,
+ xplico [amd64],
+ yara [!i386],
 Section: metapackages
 Priority: optional
 Description: Pentest tools for forensics
@@ -563,33 +637,33 @@ Description: Pentest tools for forensics
 
 Package: parrot-tools-automotive
 Architecture: all
-Recommends: can-utils,
-  parrot-meta-sdr,
-  gscanbus,
-  can-utils,
-  scantool,
-  ow-tools,
-  ow-shell,
+Recommends:
+ can-utils [!i386],
+ gscanbus,
+ ow-shell [!i386],
+ ow-tools,
+ parrot-meta-sdr,
+ scantool [!i386],
 Section: metapackages
 Priority: optional
 Description: Pentest tools for vehicle hacking
   A collection of tools for testing and exploiting
-  vulnerabilities in car-hacking/automotive. 
+  vulnerabilities in car-hacking/automotive.
 
 Package: parrot-tools-reversing
 Architecture: all
 Recommends:
-  bpf-linker,
-  clang,
-  dex2jar,
-  edb-debugger,
-  gdb,
-  ghidra,
-  javasnoop,
-  rizin,
-  rizin-cutter,
-  smali,
-  firmware-mod-kit
+ bpf-linker [!i386],
+ clang [!i386],
+ dex2jar,
+ edb-debugger [amd64],
+ firmware-mod-kit,
+ gdb [!i386],
+ ghidra [amd64 arm64],
+ javasnoop,
+ rizin [!i386],
+ rizin-cutter [!i386 !riscv64],
+ smali,
 Section: metapackages
 Priority: optional
 Description: Pentest tools for reverse engineering
@@ -599,8 +673,8 @@ Description: Pentest tools for reverse engineering
 Package: parrot-tools-reporting
 Architecture: all
 Recommends:
-  eyewitness,
-  logseq,
+ eyewitness [amd64],
+ logseq [amd64 arm64],
 Section: metapackages
 Priority: optional
 Description: Pentest tools for reporting
@@ -609,28 +683,29 @@ Description: Pentest tools for reporting
 
 Package: parrot-tools-full
 Architecture: any
-Recommends: parrot-tools,
-  parrot-tools-infogathering,
-  parrot-tools-vuln,
-  parrot-tools-web,
-  parrot-tools-pwn,
-  parrot-tools-maintain,
-  parrot-tools-postexploit,
-  parrot-tools-password,
-  parrot-tools-wireless,
-  parrot-tools-sniff,
-  parrot-tools-forensics,
-  parrot-tools-automotive,
-  parrot-tools-reversing,
-  parrot-tools-reporting,
-  parrot-tools-cloud,
-  parrot-tools-ai,
-  parrot-meta-crypto,
-  impacket-scripts,
-  ngrep,
-  netsed,
-  arpwatch,
-  vlan,
+Recommends:
+ arpwatch [!i386],
+ impacket-scripts,
+ netsed,
+ ngrep [!i386],
+ parrot-meta-crypto,
+ parrot-tools,
+ parrot-tools-ai,
+ parrot-tools-automotive,
+ parrot-tools-cloud [!i386],
+ parrot-tools-forensics,
+ parrot-tools-infogathering,
+ parrot-tools-maintain,
+ parrot-tools-password,
+ parrot-tools-postexploit,
+ parrot-tools-pwn,
+ parrot-tools-reporting,
+ parrot-tools-reversing,
+ parrot-tools-sniff,
+ parrot-tools-vuln,
+ parrot-tools-web,
+ parrot-tools-wireless,
+ vlan,
 Section: metapackages
 Priority: optional
 Description: Metapackage that installs a full penetration testing environment
@@ -643,61 +718,60 @@ Description: Metapackage that installs a full penetration testing environment
 Package: parrot-tools-cloud
 Architecture: any
 Recommends:
-  syft,
- arping,
+ arping [!i386],
+ awscli,
+ azure-cli,
+ cloud-enum,
+ cloudbrute,
  davtest,
- dirb,
+ dirb [!i386],
  dirbuster,
- dmitry,
- dns2tcp,
+ dmitry [!i386],
+ dns2tcp [!i386],
  dnschef,
  dnsenum,
- dnsmap,
- fping,
- hping3,
- iodine,
+ dnsmap [!i386],
+ etherwake [!i386],
+ fping [!i386],
+ godoh [!i386 !riscv64],
+ hping3 [!i386],
+ iodine [!i386],
  isr-evilgrade,
  joomscan,
- maskprocessor,
- medusa,
- metasploit-framework,
- ncrack,
- netdiscover,
+ maskprocessor [!i386],
+ medusa [!i386],
+ metasploit-framework [!i386],
+ ncrack [!i386],
+ netdiscover [!i386],
+ netexec [amd64 arm64],
  nikto,
- nmap,
- p0f,
- netexec,
- sbd,
- sfuzz,
- siege,
- skipfish,
- socat,
+ nmap [!i386],
+ node-aws4,
+ p0f [!i386],
+ rclone [!i386],
+ rsync [!i386],
+ s3backer [!i386],
+ s3scanner [!i386 !riscv64],
+ sbd [!i386],
+ sfuzz [!i386 !riscv64],
+ siege [!i386],
+ skipfish [!i386 !riscv64],
+ socat [!i386],
  sqlmap,
  sqlninja,
  sqlsus,
- websploit,
- tcpdump,
- t50,
- thc-ipv6,
- thc-ssl-dos,
- traceroute,
+ syft [!i386],
+ t50 [!i386],
+ tcpdump [!i386],
+ thc-ipv6 [!i386],
+ thc-ssl-dos [!i386 !riscv64],
+ traceroute [!i386],
  trufflehog,
- whois,
  webshells,
  websploit,
  weevely,
  whatweb,
- etherwake,
- cloud-enum,
- azure-cli,
- godoh,
- s3scanner,
- s3backer,
- node-aws4,
- awscli,
- cloudbrute,
- rsync,
- rclone
+ whois [!i386],
 Section: metapackages
 Priority: optional
 Description: Pentest tools for cloud

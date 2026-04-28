@@ -1,3 +1,14 @@
+parrot-tools (7.1.2) echo; urgency=medium
+
+  [ Steev Klimaszewski ]
+  * restrict architecture-specific dependencies
+  * fix build and restrictions
+
+  [ Lorenzo "Palinuro" Faletra ]
+  * Merge steev's work
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 28 Apr 2026 18:50:56 +0200
+
 parrot-tools (7.1.1) echo; urgency=medium
 
   * rebuild package

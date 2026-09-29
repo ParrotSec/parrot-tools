@@ -49,6 +49,7 @@ Recommends:
  mat2,
  nyx,
  onionshare,
+ transparent-tor-proxy,
 Suggests:
  onioncircuits,
  parrot-crypto,

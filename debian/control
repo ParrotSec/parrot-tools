@@ -68,7 +68,8 @@ Architecture: any
 Depends:
  geany [!i386],
 Recommends:
- codium [amd64 arm64],
+ geany,
+ zed [amd64 arm64] | codium [amd64 arm64],
  git [!i386],
  neovim [!i386],
  python3 [!i386],
@@ -95,16 +96,17 @@ Depends:
  golang [!i386],
  python3 [!i386],
  python3-pip,
+ python3-venv
 Recommends:
  cargo [!i386],
  cgdb [!i386],
- dbeaver [amd64 arm64],
  default-jdk [!i386],
  gdb [!i386],
  git-cola,
  meld,
  sqlitebrowser [!i386],
 Suggests:
+ dbeaver [amd64 arm64],
  parrot-meta-devel-extra,
 Section: metapackages
 Priority: optional
@@ -123,11 +125,9 @@ Depends:
 Recommends:
  build-essential [!i386],
  cmake [!i386],
- cython3 [!i386],
  devscripts,
  edb-debugger [amd64],
  flasm,
- jad,
  mono-devel [!i386 !riscv64],
  mono-runtime [!i386 !riscv64],
  nasm [!i386],

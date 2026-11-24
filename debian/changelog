@@ -1,3 +1,10 @@
+parrot-tools (7.5.0) echo; urgency=medium
+
+  * parrot-meta-devel: use zed by default over codium.
+  * parrot-meta-devel-extra: move dbeaver to suggests (proprietary!).
+
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Tue, 24 Nov 2026 01:53:15 +0100
+
 parrot-tools (7.1.2) echo; urgency=medium
 
   [ Steev Klimaszewski ]
